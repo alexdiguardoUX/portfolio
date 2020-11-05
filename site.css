@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    color: #181818;
+    background-color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #FFF;
+}
+
+h1, footer h1 {font-size: 35px;}
+
+header h1 {
+    margin: 10px 0 3px 8vw;
+    font-size: 20px;
+}
+
+header h2 {
+    margin: 0 0 10px 8vw;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.sub-header {
+    background-color: #f5f5f5;
+}
+
+.flex-box {
+    display: flex;
+    margin: 0 10px 0px 8vw;
+    padding: 40px 0;
+}
+
+
+.left-flex {
+    width: 25%;
+}
+
+.right-flex {
+    width: 75%;
+    text-align: center;
+}
+
+.paragraph {
+    max-width: 950px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.image img {
+    width: 35vw;
+    min-width: 450px;
+    height: auto;
+    margin: 4vh;
+}
+
+.btn-primary {
+    background-color: #0c93f7;
+    border: none;
+    padding: 16px;
+    border-radius: 42px;
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.btn-primary:hover {
+    background-color: #0862A6;
+    transition: all 0.8s;
+}    
+
+.top-partners {
+    padding: 0 10px 10px 8vw;
+}
+
+.top-partners img {
+    padding: 20px;
+    max-width: 100% ;
+}
+
+.top-partners .rentalcars {
+    padding-left: 0;
+}
+
+.top-partners .booking, .top-partners .edreams  {
+    padding-bottom: 15px;
+}
+
+.white-labels-image img {
+    width: 30vw;
+    min-width: 300px;
+    height: auto;
+    margin: 4vh;
+}
+
+.widgets-image img {
+    min-width: 500px;
+}
+
+.avatar img {
+    border-radius: 100%;
+    width: 20vw;
+    min-width: 300px;
+    height: auto;
+}
+
+.product-dev img {
+    box-shadow: 0px 12px 20px 0px #00000057
+}
+
+.white-labels {
+    background-color: #0d93f8;
+    color: #FFF;
+}
+
+.introduction, .white-labels-text, .product-dev-text, .widgets-text, .banners-text {
+    margin-top: 4vw;
+}
+
+.product-dev  {
+    background-color: #FBB038;
+    color: #FFF;
+}
+
+.widgets  {
+    background-color: #0a3898;
+    color: #FFF;
+}
+
+.banners  {
+    background-color: #c4ac8c;
+    color: #FFF;
+}
+
+.footer-content {
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.contact-ctas {
+    display: flex;
+}
+
+.linkedin, .email {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    transition: all 200ms cubic-bezier(.215, .61, .355, 1);
+}
+
+.linkedin:hover, .email:hover {
+    border-radius: 20px;
+}    
+
+.linkedin {
+    margin-right: 20px;
+}
+
+.email {
+    margin-left: 20px;
+}
+
+.linkedin img {
+    padding: 60px 25px;
+}
+
+.email img {
+    padding: 60px;
+}
+
+.footer-content p {
+    font-size: 12px;
+    width: 80%;
+    margin: 25px auto;
+}
+
+/* HOME MEDIA QUERIES */
+
+@media (max-width: 800px) {
+    .flex-box {
+        display: block;
+        margin: 0 5vw 0 5vw;
+        padding: 10px;
+    }
+    .left-flex, .right-flex {width: 100%}
+    .image img {
+        min-width: 270px;
+        margin: 0;
+    }
+
+    .avatar img {margin-top: 35px;}
+    
+    .top-partners {
+        text-align: center;
+    }
+
+    .top-partners img {
+        max-width: 80%;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+}    
