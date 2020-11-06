@@ -257,3 +257,7 @@ header h2 {
         padding: 10px;
     }
 }
+
+@media (max-width: 360px) {
+    .top-partners .rentalcars {padding-left: 20px}
+}
