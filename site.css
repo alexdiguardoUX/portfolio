@@ -125,10 +125,51 @@ header h2 {
     color: #FFF;
 }
 
-.widgets  {
-    background-color: #0a3898;
-    color: #FFF;
+.process  {
+    background-color: #f9f9f9;
+    color: #000;
+    text-align: center
 }
+
+.icon {
+    height: 88px;
+}
+
+.icon img {
+    width: 70px;
+    padding: 40px 0 25px;
+}
+
+img.build {
+    width: 90px;
+}
+
+.process .card {
+    box-shadow: 12px 12px 20px 0px #e0e0e0;
+    background: #FFF; 
+    background: linear-gradient(200deg, rgba(19,170,213,0.1) 0%, rgba(139,65,249,0.1) 100%);
+    border-radius: 20px;
+    display: inline-block;
+    width: 300px;
+    height: 345px;
+    margin: 33px 2%;
+}
+
+.card .title {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 75px 0 0 0;
+}
+
+.card p {
+    font-size: 16px;
+    padding: 10px 28px 40px;
+    text-align: left;
+    line-height: 25px;
+    height: 0px;
+    
+}
+
 
 .banners  {
     background-color: #c4ac8c;
@@ -142,7 +183,7 @@ header h2 {
 }
 
 .spare-time img {
-    width: 28vw;
+    width: 20vw;
     min-width: 300px;
     height: auto;
     margin: 4vh;
@@ -154,6 +195,8 @@ header h2 {
     line-height: 30px;
     margin: 32px auto;
 }
+
+.process .paragraph {margin: 32px auto;}
 
 .center-box {
     display: inline-block;
@@ -178,7 +221,7 @@ header h2 {
     margin: 10px auto;
     justify-content: center;
     align-items: center;
-    background-color: #e8e8e8;
+    background-color: #f5f5f5;
     transition: all 200ms cubic-bezier(.215, .61, .355, 1);
 }
 
@@ -238,12 +281,20 @@ header h2 {
         height: 125px;
     }
 
-    .center-box {
+    .spare-time .center-box {
         text-align: left;
         display: block;
         margin: 0 5vw 0 5vw;
         padding: 10px;
     }
+
+    .process h1, .process .paragraph {
+        text-align: left;
+        display: block;
+        margin: 0 5vw 0 5vw;
+        padding: 10px;
+    }
+
 
     .spare-time-image {
         text-align: center;
@@ -260,4 +311,8 @@ header h2 {
 
 @media (max-width: 360px) {
     .top-partners .rentalcars {padding-left: 20px}
+    .process .card {
+        margin: 20px 0;
+        width: 250px;
+    }
 }
