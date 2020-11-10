@@ -33,6 +33,7 @@ header h2 {
     padding: 40px 0;
 }
 
+form {display: inline-block}
 
 .left-flex {
     width: 25%;
