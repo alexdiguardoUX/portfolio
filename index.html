@@ -3,6 +3,7 @@
     <!-- HEADER -->
     <head>
         <link rel="stylesheet" type="text/css" href="site.css">
+        
         <link rel="icon" href="images/favicon.png"/>
         <title>Alex Di Guardo Portfolio | UI/UX Designer</title>
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -12,7 +13,6 @@
     </head>
 
     <body>
-
         </script>
         <header>
             <h1>Alex Di Guardo</h1>
@@ -158,6 +158,21 @@
                 </div>
             </div>
         </div>
+        <!-- Modals -->
+        <div id="modal-thai" class="modal-thai">
+            <div class="modal-content">
+                <span class="close_thai_modal close_modal">&times;</span><br>
+                <img class="thai-large" src="images/thai.jpg">
+            </div>
+        </div>
+        
+        <div id="modal-routard" class="modal-routard">
+            <div class="modal-content">
+                <span class="close_routard_modal close_modal">&times;</span><br>
+                <img class="routard-large" src="images/routard.jpg">
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts.js"></script>
         <!-- Spare Time -->
         <div class="spare-time">
             <div class="center-box">
@@ -191,110 +206,5 @@
         </footer>
     </body>
 </html>
-
-
-
-<style>
-    /* The Modal (background of the pop up box) */
-    .modal-thai, .modal-routard {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-
-    .modal-routard {top: -73px;}
-    
-    /* Modal Content */
-    .modal-content {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        max-width: 1000px;
-        box-shadow: 0 0 20px 3px #3c3a3a;
-        border-radius: 10px;
-    }
-    
-    /* The Close Button */
-    .close_modal {
-        color: #aaaaaa;
-        float: right;
-        top: -7px;
-        position: relative;
-        font-size: 28px;
-        font-weight: bold;
-    }
-    
-    .close_modal:hover,
-    .close_modal:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .thai-large, .routard-large {
-        width: 100%;
-        border-radius: 20px;
-    }
-    
-    </style>
-    
-
-<!-- The Modal -->
-<div id="modal-thai" class="modal-thai">
-    <div class="modal-content">
-        <span class="close_thai_modal close_modal">&times;</span><br>
-        <img class="thai-large" src="images/thai.jpg">
-    </div>
-</div>
-
-<div id="modal-routard" class="modal-routard">
-    <div class="modal-content">
-        <span class="close_routard_modal close_modal">&times;</span><br>
-        <img class="routard-large" src="images/routard.jpg">
-    </div>
-</div>
-    
-    <!-- Javascript section -->
-    <script>
-    // Get the modal
-    var modalThai = document.getElementById('modal-thai');
-    var modalRoutard = document.getElementById('modal-routard');
-    
-    // Get the <span> element that closes the modal
-    var closeThai = document.getElementsByClassName("close_thai_modal")[0];
-    var closeRoutard = document.getElementsByClassName("close_routard_modal")[0];
-   
-
-    // Clickable banners
-    var thaiThumb = document.getElementsByClassName("thai-thumb")[0];
-    var routardThumb = document.getElementsByClassName("routard-thumb")[0];
-    
-    // Specify the display style
-    thaiThumb.onclick = function openModal() {
-        modalThai.style.display = "block";
-    }
-
-    routardThumb.onclick = function openModal() {
-        modalRoutard.style.display = "block";
-    }
-    
-    // When the user clicks on (x), close the modal
-    closeThai.onclick = function() {
-        modalThai.style.display = "none";
-    }
-
-    closeRoutard.onclick = function() {
-        modalRoutard.style.display = "none";
-    }
-    </script>
     
     
