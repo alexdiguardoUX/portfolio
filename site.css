@@ -176,6 +176,7 @@ img.build {
 .banners  {
     background-color: #05447e;
     color: #FFF;
+    height: 660px;
 }
 
 .banners img {
@@ -335,6 +336,8 @@ img.build {
     }
 
     .banners img {margin: 3vh auto;}
+
+    .banners {height: inherit;}
 
     .avatar img {margin-top: 35px;}
     
