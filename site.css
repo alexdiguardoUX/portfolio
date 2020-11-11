@@ -55,6 +55,7 @@ form {display: inline-block}
     min-width: 450px;
     height: auto;
     margin: 4vh;
+    border-radius: 20px;
 }
 
 .btn-primary {
@@ -172,10 +173,24 @@ img.build {
     
 }
 
-
 .banners  {
     background-color: #05447e;
     color: #FFF;
+}
+
+.banners img {
+    display: block;
+    width: 25vw;
+    margin: 30px auto;
+    box-shadow: 0px 12px 20px 0px #00000057;
+    transition-duration: 0.4s;
+}
+
+.banners img:hover {
+    width: 25.5vw;
+    transition: all 0.1s;
+    box-shadow: 0px 0px 20px 0px #ffffff50;
+    cursor: pointer;
 }
 
 .spare-time   {
@@ -256,6 +271,8 @@ img.build {
     margin: 25px auto;
 }
 
+
+
 /* HOME MEDIA QUERIES */
 
 @media (max-width: 800px) {
@@ -270,6 +287,8 @@ img.build {
         min-width: 270px;
         margin: 0;
     }
+
+    .banners img {margin: 3vh auto;}
 
     .avatar img {margin-top: 35px;}
     
@@ -321,3 +340,6 @@ img.build {
         width: 250px;
     }
 }
+
+
+
