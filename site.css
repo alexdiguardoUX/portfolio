@@ -114,6 +114,10 @@ form {display: inline-block}
     box-shadow: 0px 12px 20px 0px #00000057
 }
 
+.case-study-sticky {
+    box-shadow: none !important;
+}
+
 .white-labels {
     background-color: #0d93f8;
     color: #FFF;
