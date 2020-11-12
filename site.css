@@ -116,6 +116,7 @@ form {display: inline-block}
 
 .case-study-sticky {
     box-shadow: none !important;
+    width: 120px;
 }
 
 .white-labels {
@@ -324,7 +325,7 @@ img.build {
     border-radius: 20px;
 }
 
-/* HOME MEDIA QUERIES */
+/* MEDIA QUERIES */
 
 @media (max-width: 800px) {
     .flex-box {
@@ -352,6 +353,8 @@ img.build {
     .top-partners img {
         max-width: 80%;
     }
+
+    .sticky-notes-wrap {text-align: center;}
 
     .linkedin, .email {
         width: 125px;
