@@ -126,7 +126,7 @@ form {display: inline-block}
 }
 
 .separator {
-    margin: 5px;
+    margin: 2px;
 }
 
 .avatar img {
@@ -206,6 +206,7 @@ img.build, img.deliver {
 
 .case-studies {
     background-color: #05a3c9a8;
+    color: #002e40;
 }
 
 .case-studies .center-box {
