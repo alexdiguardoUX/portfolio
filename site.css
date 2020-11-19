@@ -67,13 +67,32 @@ form {display: inline-block}
     font-weight: 600;
     cursor: pointer;
     transition-duration: 0.4s;
-    margin: 5px;
 }
 
 .btn-primary:hover {
     background-color: #0862A6;
     transition: all 0.8s;
 }    
+
+.btn-secondary {
+    border: 2px solid black;
+    border-radius: 80px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin: 75px auto;
+    width: 129px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffffc7;
+    transition: all 0.8s;
+}  
 
 .top-partners {
     padding: 0 10px 10px 8vw;
@@ -99,8 +118,15 @@ form {display: inline-block}
     margin: 3vh;
 }
 
-.widgets-image img {
-    min-width: 500px;
+.example-link {
+    color: #FFF;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.separator {
+    margin: 5px;
 }
 
 .avatar img {
@@ -114,11 +140,6 @@ form {display: inline-block}
     box-shadow: 0px 12px 20px 0px #00000057
 }
 
-.case-study-sticky {
-    box-shadow: none !important;
-    width: 120px;
-}
-
 .white-labels {
     background-color: #0d93f8;
     color: #FFF;
@@ -129,7 +150,7 @@ form {display: inline-block}
 }
 
 .product-dev  {
-    background-color: #FBB038;
+    background-color: #ffa618;
     color: #FFF;
 }
 
@@ -153,7 +174,7 @@ img.build, img.deliver {
 }
 
 .process .card {
-    box-shadow: 12px 12px 20px 0px #e0e0e0;
+    box-shadow: 4px 4px 8px 0px #bbbbbb4f;
     background: #FFF; 
     background: linear-gradient(200deg, rgba(19,170,213,0.1) 0%, rgba(139,65,249,0.1) 100%);
     border-radius: 20px;
@@ -161,6 +182,11 @@ img.build, img.deliver {
     width: 300px;
     height: 345px;
     margin: 33px 2%;
+}
+
+.case-studies .card {
+    background: linear-gradient(200deg, rgb(213 211 247) 0%, rgb(248 221 207) 100%);
+    box-shadow: 4px 4px 8px 0px #5d5d5d4f;
 }
 
 .card .title {
@@ -176,6 +202,14 @@ img.build, img.deliver {
     line-height: 25px;
     height: 0px;
     
+}
+
+.case-studies {
+    background-color: #05a3c9a8;
+}
+
+.case-studies .center-box {
+    display: block;
 }
 
 .banners  {
@@ -338,7 +372,7 @@ img.build, img.deliver {
     .left-flex, .right-flex {width: 100%}
     .image img {
         min-width: 270px;
-        margin: 0;
+        margin: 20px 0;
     }
 
     .banners img {margin: 3vh auto;}
