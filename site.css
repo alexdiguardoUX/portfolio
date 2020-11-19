@@ -148,8 +148,8 @@ form {display: inline-block}
     padding: 40px 0 25px;
 }
 
-img.build {
-    width: 90px;
+img.build, img.deliver {
+    width: 80px;
 }
 
 .process .card {
@@ -213,10 +213,11 @@ img.build {
 }
 
 .spare-time .paragraph {
-    max-width: 500px;
+    max-width: 550px;
     font-size: 18px;
     line-height: 30px;
     margin: 32px auto;
+    text-align: left;
 }
 
 .process .paragraph {
