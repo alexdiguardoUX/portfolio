@@ -1,30 +1,52 @@
 
 // Get the modal
-var modalThai = document.getElementById('modal-thai');
-var modalRoutard = document.getElementById('modal-routard');
+var modalSecondLife = document.getElementById('modal-secondlife');
+var modalSubNav = document.getElementById('modal-sub-nav');
+var modalBrandReplace = document.getElementById('modal-brand-replacement');
+var modalCostco = document.getElementById('modal-costco');
 
 // Get the X that closes the modal
-var closeThai = document.getElementsByClassName("close_thai_modal")[0];
-var closeRoutard = document.getElementsByClassName("close_routard_modal")[0];
+var closeSecondLife = document.getElementsByClassName("close_secondlife_modal")[0];
+var closeSubNav = document.getElementsByClassName("close_sub-nav_modal")[0];
+var closeBrandReplace = document.getElementsByClassName("close_brand-replacement_modal")[0];
+var closeCostco = document.getElementsByClassName("close_costco_modal")[0];
 
 // Clickable thumbnails
-var thaiThumb = document.getElementsByClassName("thai-thumb")[0];
-var routardThumb = document.getElementsByClassName("routard-thumb")[0];
+var secondLifeThumb = document.getElementsByClassName("secondlife-thumb")[0];
+var subNavThumb = document.getElementsByClassName("sub-nav-thumb")[0];
+var brandReplaceThumb = document.getElementsByClassName("brand-replacement-thumb")[0];
+var costcoThumb = document.getElementsByClassName("costco-thumb")[0];
 
 // Specify the display style
-thaiThumb.onclick = function openModal() {
-    modalThai.style.display = "block";
+secondLifeThumb.onclick = function openModal() {
+    modalSecondLife.style.display = "block";
 }
 
-routardThumb.onclick = function openModal() {
-    modalRoutard.style.display = "block";
+subNavThumb.onclick = function openModal() {
+    modalSubNav.style.display = "block";
+}
+
+brandReplaceThumb.onclick = function openModal() {
+    modalBrandReplace.style.display = "block";
+}
+
+costcoThumb.onclick = function openModal() {
+    modalCostco.style.display = "block";
 }
 
 // When the user clicks on X, close the modal
-closeThai.onclick = function() {
-    modalThai.style.display = "none";
+closeSecondLife.onclick = function() {
+    modalSecondLife.style.display = "none";
 }
 
-closeRoutard.onclick = function() {
-    modalRoutard.style.display = "none";
+closeSubNav.onclick = function() {
+    modalSubNav.style.display = "none";
+}
+
+closeBrandReplace.onclick = function() {
+    modalBrandReplace.style.display = "none";
+}
+
+closeCostco.onclick = function() {
+    modalCostco.style.display = "none";
 }
