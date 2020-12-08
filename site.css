@@ -246,6 +246,7 @@ img.build, img.deliver {
 .case-studies img, .ux-challenges-cards img {
     width: 100%;
     border-radius: 20px 20px 0 0;
+    border-bottom: 1px solid #eaeaea;
 }
 
 .case-studies .card .title, .ux-challenges .card .title {
@@ -304,7 +305,7 @@ img.build, img.deliver {
 }
 
 
-.modal-secondlife, .modal-sub-nav, .modal-brand-replacement, .modal-costco {
+.modal-secondlife, .modal-sub-nav, .modal-brand-replacement, .modal-costco, .modal-daytrip {
     display: none; 
     position: fixed; 
     z-index: 1; 
