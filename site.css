@@ -98,6 +98,19 @@ form {display: inline-block}
     transition: all 0.8s;
 }  
 
+.round-ctas {
+    display: flex;
+}
+
+.round-ctas img {
+    width: 47.43px;
+    margin: 0 11px;
+}
+
+.linkedin-round {
+    margin-left: 25px !important;
+}
+
 .top-partners {
     padding: 0 10px 10px 8vw;
 }
@@ -273,18 +286,15 @@ img.build, img.deliver {
 
 .linkedin, .email {
     display: flex;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     margin: 10px auto;
     justify-content: center;
     align-items: center;
     background-color: #f5f5f5;
     transition: all 200ms cubic-bezier(.215, .61, .355, 1);
-}
-
-.linkedin:hover, .email:hover {
     border-radius: 20px;
-}    
+}
 
 .linkedin {
     margin-right: 20px;
