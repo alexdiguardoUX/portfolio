@@ -458,7 +458,11 @@ iframe {border-radius: 10px}
 
 @media (max-width: 320px) {
     .image img {
-        min-width: 275px;
+        min-width: 265px;
+    }
+
+    .avatar img {
+        min-width: 265px;
     }
 }
 
