@@ -35,6 +35,10 @@ header h2 {
 
 form {display: inline-block}
 
+.introduction.left-flex {
+    width: 30%;
+}
+
 .left-flex {
     width: 25%;
 }
@@ -181,7 +185,7 @@ img.build, img.deliver {
     display: inline-block;
     width: 300px;
     height: 345px;
-    margin: 33px 2%;
+    margin: 25px 2%;
 }
 
 
@@ -240,7 +244,7 @@ img.build, img.deliver {
     display: inline-block;
     max-width: 400px;
     height: 500px;
-    margin: 33px 2%;
+    margin: 25px 2%;
 }
 
 .case-studies img, .ux-challenges-cards img {
@@ -385,6 +389,11 @@ iframe {border-radius: 10px}
 .product-dev-image:hover .tooltip-wireframe, .white-labels-image:hover .tooltip-rc  {visibility: visible}
 
 /* MEDIA QUERIES */
+@media (max-width: 675px) {
+    .case-studies .card, .ux-challenges .card {
+        max-width: 320px;
+    }
+}
 
 @media (max-width: 800px) {
     .flex-box {
@@ -393,9 +402,9 @@ iframe {border-radius: 10px}
         padding: 10px;
     }
 
-    .left-flex, .right-flex {width: 100%}
+    .introduction.left-flex, .left-flex, .right-flex {width: 100%}
     .image img {
-        min-width: 270px;
+        min-width: 320px;
         margin: 20px 0;
     }
 
@@ -434,15 +443,6 @@ iframe {border-radius: 10px}
         padding: 10px;
     }
 
-
-    .spare-time-image {
-        text-align: center;
-    }
-
-    .spare-time .paragraph {
-        max-width: 700px;
-    }
-
     .footer-content {
         padding: 10px;
     }
@@ -453,6 +453,12 @@ iframe {border-radius: 10px}
     .process .card {
         margin: 20px 0;
         width: 250px;
+    }
+}
+
+@media (max-width: 320px) {
+    .image img {
+        min-width: 275px;
     }
 }
 
