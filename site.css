@@ -105,10 +105,65 @@ form {display: inline-block}
 .round-ctas img {
     width: 47.43px;
     margin: 0 11px;
+    cursor: pointer;
 }
 
 .linkedin-round {
     margin-left: 25px !important;
+}
+
+.gmail-round-wrap {
+    cursor: pointer;
+}
+
+#emailInput {
+    color: transparent;
+    background: transparent;
+    border: none;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: -5px;
+}
+
+.tooltip-email {
+    position: relative;
+    display: inline-block;
+  }
+  
+.tooltip-email .tooltiptext-email {
+    visibility: hidden;
+    font-size: 14px;
+    width: 135px;
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 122%;
+    left: 15%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0px 0px 14px 0px #a0a0a0;
+}
+
+.tooltip-email .tooltiptext-email::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 68%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #FFF transparent transparent transparent;
+}
+
+.tooltip-email:hover .tooltiptext-email {
+    visibility: visible;
+    opacity: 1;
 }
 
 .top-partners {
@@ -304,12 +359,9 @@ img.build, img.deliver {
     margin-left: 20px;
 }
 
-.linkedin img {
-    padding: 60px 25px;
-}
 
-.email img {
-    padding: 60px;
+.email img, .email img  {
+    padding: 60px 25px;
 }
 
 .footer-content p {

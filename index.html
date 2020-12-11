@@ -33,8 +33,12 @@
                             <a href="https://www.linkedin.com/in/alexdiguardo/" target="_blank"><img class="linkedin-round" src="images/linkedin-round.png"></a>
                         </div>    
                         <div class="gmail-round-wrap">
-                            <a href="mailto:alexinfobusiness@gmail.com" target="_blank"><img class="gmail-round" src="images/gmail-round.png"></a>
-                        </div>    
+                            <div class="tooltip-email">
+                                <img onclick="copyEmail()" onmouseout="outFunc()" src="images/gmail-round.png">
+                                <span class="tooltiptext-email" id="myTooltip-email">Copy email to clipboard</span>
+                            </div>
+                        </div>  
+                        <input type="text" value="alexinfobusiness@gmail.com" id="emailInput">
                     </div>
                 </div>
                 <div class="avatar right-flex image">
@@ -271,10 +275,10 @@
                         <a href="https://www.linkedin.com/in/alexdiguardo/" target="_blank"><img src="images/linkedin-round.png"></a>
                     </div>
                     <div class="email">
-                        <a href="mailto:alexinfobusiness@gmail.com" target="_blank"><img src="images/gmail-round.png"></a>
+                        <a href="mailto:alexinfobusiness@gmail.com" target="_blank"> <img src="images/gmail-round.png"></a>
                     </div>
                 </div>
-                <p>Portfolio entirely built using HTML and responsive CSS - Alex Di Guardo © 2020</p>
+                <p>Portfolio entirely built using HTML, CSS & JS<br>Alex Di Guardo © 2020</p>
             </div>
         </footer>
     </body>
