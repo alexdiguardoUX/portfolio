@@ -143,7 +143,7 @@ form {display: inline-block}
     position: absolute;
     z-index: 1;
     bottom: 122%;
-    left: 15%;
+    left: 77%;
     margin-left: -75px;
     opacity: 0;
     transition: opacity 0.3s;
@@ -154,7 +154,7 @@ form {display: inline-block}
     content: "";
     position: absolute;
     top: 100%;
-    left: 68%;
+    left: 40%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
@@ -516,6 +516,15 @@ iframe {border-radius: 10px}
         margin: 20px 0;
         width: 250px;
     }
+
+    .tooltip-email .tooltiptext-email {
+        left: 15%;
+    }
+    
+    .tooltip-email .tooltiptext-email::after {
+        left: 68%;
+    }
+    
 }
 
 @media (max-width: 320px) {
