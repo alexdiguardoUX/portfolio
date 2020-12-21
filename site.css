@@ -221,6 +221,13 @@ form {display: inline-block}
     margin-top: 4vw;
 }
 
+.other-skills-h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+    color: #000;
+}
+
 .product-dev  {
     background-color: #ffa618;
     color: #000;
@@ -288,7 +295,8 @@ img.build, img.deliver {
     fill: #FFF;
 }
 
-div.ux-challenges > div.center-box > div.ux-challenges-cards.center-box > div:nth-child(3) > a:nth-child(1) > svg > path {
+div.ux-challenges > div.center-box > div.ux-challenges-cards.center-box > div:nth-child(3) > a:nth-child(1) > svg > path,
+div.case-studies > div > div.case-studies-cards.center-box > div:nth-child(3) > a:nth-child(1) > svg > path {
     fill: #000;
 }
 
