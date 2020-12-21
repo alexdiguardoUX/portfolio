@@ -279,6 +279,18 @@ img.build, img.deliver {
     
 }
 
+.new-tab{
+    position: absolute;
+    margin: 15px;
+}
+
+.new-tab path {
+    fill: #FFF;
+}
+
+div.ux-challenges > div.center-box > div.ux-challenges-cards.center-box > div:nth-child(3) > a:nth-child(1) > svg > path {
+    fill: #000;
+}
 
 .case-studies {
     background-color: #05a3c9a8;
@@ -370,51 +382,6 @@ img.build, img.deliver {
     margin: 25px auto;
 }
 
-
-.modal-secondlife, .modal-sub-nav, .modal-brand-replacement, .modal-costco, .modal-daytrip, .modal-ab {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 10px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    max-width: 100%;
-    height: 100%;
-    box-shadow: 0 0 20px 3px #3c3a3a;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.close_modal {
-    color: #aaaaaa;
-    float: right;
-    top: -7px;
-    position: relative;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close_modal:hover,
-.close_modal:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-iframe {border-radius: 10px}
-
 .tooltip-wireframe, .tooltip-rc {
     visibility: hidden;
     max-width: 300px;
@@ -444,7 +411,6 @@ iframe {border-radius: 10px}
 .tooltip-rc:after {
     margin-left: -78px;
 }
-
 
 .tooltip-rc {text-align: center;}
 
