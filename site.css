@@ -505,6 +505,11 @@ div.case-studies > div > div.case-studies-cards.center-box > div:nth-child(3) > 
     .tooltip-email .tooltiptext-email::after {
         left: 68%;
     }
+
+    .case-studies > div > div.case-studies-text > h1,
+    .ux-challenges > div.center-box > div.ux-challenges-text.ux-challenges-text > h1 {
+        text-align: left;
+    }
     
 }
 
@@ -517,6 +522,3 @@ div.case-studies > div > div.case-studies-cards.center-box > div:nth-child(3) > 
         min-width: 265px;
     }
 }
-
-
-
