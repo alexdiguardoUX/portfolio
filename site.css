@@ -353,7 +353,7 @@ div.case-studies > div > div.case-studies-cards.center-box > div:nth-child(3) > 
 }
 
 .case-studies .card .title, .ux-challenges .card .title {
-    padding: 35px 0 0 0;
+    padding: 35px 10px 0;
 }
 
 .ux-challenges .center-box {
