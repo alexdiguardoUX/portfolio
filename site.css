@@ -305,8 +305,9 @@ img.build, img.deliver {
     fill: #FFF;
 }
 
-div.ux-challenges > div.center-box > div.ux-challenges-cards.center-box > div:nth-child(3) > a:nth-child(1) > svg > path,
-div.case-studies > div > div.case-studies-cards.center-box > div:nth-child(3) > a:nth-child(1) > svg > path {
+.case-studies-cards.center-box > div:nth-child(2) > a:nth-child(1) > svg > path,
+.case-studies-cards.center-box > div:nth-child(4) > a:nth-child(1) > svg > path,
+.ux-challenges-cards.center-box > div:nth-child(3) > a:nth-child(1) > svg > path {
     fill: #000;
 }
 
