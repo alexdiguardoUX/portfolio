@@ -306,7 +306,7 @@ img.build, img.deliver {
 }
 
 .case-studies-cards.center-box > div:nth-child(2) > a:nth-child(1) > svg > path,
-.case-studies-cards.center-box > div:nth-child(4) > a:nth-child(1) > svg > path,
+.case-studies-cards.center-box > div:nth-child(3) > a:nth-child(1) > svg > path,
 .ux-challenges-cards.center-box > div:nth-child(3) > a:nth-child(1) > svg > path {
     fill: #000;
 }
