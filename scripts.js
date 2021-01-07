@@ -12,5 +12,3 @@ function outFunc() {
     var tooltip = document.getElementById("myTooltip-email");
     tooltip.innerHTML = "Copy email to clipboard";
 }
-
-
