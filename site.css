@@ -40,7 +40,7 @@ header h2 {
 form {display: inline-block}
 
 .introduction.left-flex {
-    width: 30%;
+    width: 31%;
 }
 
 .left-flex {
@@ -53,13 +53,16 @@ form {display: inline-block}
 }
 
 .paragraph {
-    /* max-width: 950px; */
     font-size: 18px;
     line-height: 30px;
 }
 
+.case-studies-text > p:nth-child(3) {
+    font-weight: bold;
+}
+
 .image img {
-    width: 38vw;
+    width: 43vw;
     min-width: 450px;
     height: auto;
     margin: 4vh;
