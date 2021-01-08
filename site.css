@@ -10,7 +10,10 @@ header {
     background-color: #FFF;
 }
 
-h1, footer h1 {font-size: 35px;}
+h1, footer h1 {
+    font-size: 35px;
+    text-shadow: 2px 2px 2px #00000020;
+}
 
 header h1 {
     margin: 10px 0 3px 8vw;
@@ -189,6 +192,7 @@ form {display: inline-block}
     margin: 0;
     color: #47555f;
     font-family: helvetica;
+    text-shadow: 2px 2px 2px #00000018;
 }
 
 .white-labels-image img {
@@ -248,6 +252,8 @@ form {display: inline-block}
 
 .skills-bullets {
     line-height: 200%;
+    text-shadow: 2px 2px 3px #00000035;
+    font-family: helvetica;
 }
 
 .process  {
