@@ -222,7 +222,7 @@ form {display: inline-block}
     color: #FFF;
 }
 
-.introduction, .white-labels-text, .product-dev-text, .widgets-text, .banners-text {
+.introduction, .white-labels-text {
     margin-top: 4vw;
 }
 
@@ -234,8 +234,12 @@ form {display: inline-block}
 }
 
 .product-dev  {
-    background-color: #ffa618;
+    background-color: #ffae35;
     color: #000;
+}
+
+.skills-bullets {
+    line-height: 200%;
 }
 
 .process  {
