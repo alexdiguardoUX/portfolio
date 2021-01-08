@@ -218,6 +218,7 @@ form {display: inline-block}
     width: 20vw;
     min-width: 300px;
     height: auto;
+    box-shadow: 0 0 11px 0px #00000080;
 }
 
 .case-studies, .ux-challenges {
