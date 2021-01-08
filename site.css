@@ -168,7 +168,7 @@ form {display: inline-block}
 }
 
 .top-partners {
-    padding: 0 10px 10px 8vw;
+    padding: 0 10px 30px 8vw;
 }
 
 .top-partners img {
@@ -182,6 +182,13 @@ form {display: inline-block}
 
 .top-partners .booking, .top-partners .edreams  {
     padding-bottom: 15px;
+}
+
+.brands-work {
+    font-size: 14px;
+    margin: 0;
+    color: #47555f;
+    font-family: helvetica;
 }
 
 .white-labels-image img {
