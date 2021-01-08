@@ -236,7 +236,7 @@ form {display: inline-block}
 .product-dev  {
     background-color: #0a93f8;
     color: #FFF;
-    border-bottom: 1px solid #007ed8;
+    border-bottom: 2px dashed #FFF;
 }
 
 .skills-bullets {
