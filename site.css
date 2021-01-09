@@ -11,11 +11,39 @@ body {
 header {
     width: 100%;
     background-color: #FFF;
+    position: fixed;     
+    z-index: 5;
+    box-shadow: inset 0px -2px 7px #00000015;
 }
+
+.name-title, .navigation {
+    display: inline-block;
+}
+
+.navigation {
+    margin: 20px 0 0 39vw;
+    position: absolute; 
+}
+
+.navigation a {
+    padding: 0 12px;
+    font-weight: 700;
+    color: #000;
+}
+
+#process-anchor, #projects-anchor, #skills-anchor, #design-lab-anchor {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    background: #f2f8ff;
+}
+
+#projects-anchor {background-color: #75c3dc;}
+#skills-anchor {background-color: #0a93f8;}
+#design-lab-anchor {background-color:#ffc079;}
 
 h1, footer h1 {
     font-size: 35px;
-    text-shadow: 2px 2px 2px #00000020;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -32,7 +60,16 @@ header h2 {
 
 .sub-header {
     background-color: #F2F8FF;
-    border-bottom: 2px dashed #c1c1c1;;
+    border-bottom: 2px dashed #c1c1c1;
+    min-height: 100vh;
+}
+
+.sub-header h1 {
+    max-width: 95%;
+}
+
+.sub-header .flex-box {
+    padding: 107px 0 0;
 }
 
 .flex-box {
@@ -111,7 +148,7 @@ form {display: inline-block}
 
 .round-ctas {
     display: flex;
-    margin: 55px 0 70px;
+    margin: 55px 0 16vh;
 }
 
 .round-ctas img {
@@ -179,7 +216,7 @@ form {display: inline-block}
 }
 
 .top-partners {
-    padding: 0 10px 30px 8vw;
+    padding: 0 10px 50px 8vw;
 }
 
 .top-partners img {
@@ -199,8 +236,45 @@ form {display: inline-block}
     font-size: 14px;
     margin: 0;
     color: #47555f;
-    text-shadow: 2px 2px 2px #00000018;
     font-family: 'Montserrat';
+}
+
+.icon-scroll,
+.icon-scroll:before {
+    position: absolute;
+    left: 50%;
+}
+.icon-scroll {
+    width: 30px;
+    height: 50px;
+    margin-left: -20px;
+    bottom: 4vh;
+    margin-top: -35px;
+    border: 2px solid #4dbdff;
+    border-radius: 25px;
+}
+
+.icon-scroll:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #4dbdff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(26px);
+    }
 }
 
 .white-labels-image img {
@@ -268,7 +342,8 @@ form {display: inline-block}
 .process  {
     background-color: #F2F8FF;
     color: #000;
-    text-align: center
+    text-align: center;
+    padding-bottom: 35px;
 }
 
 .icon {
@@ -339,6 +414,7 @@ img.build, img.deliver {
 .case-studies {
     background-color: #05a3c9a8;
     color: #002e40;
+    padding-bottom: 35px;
 }
 
 .case-studies .center-box {
@@ -369,7 +445,7 @@ img.build, img.deliver {
 .center-box {
     display: inline-block;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .ux-challenges {
@@ -473,6 +549,14 @@ img.build, img.deliver {
 .product-dev-image:hover .tooltip-wireframe, .white-labels-image:hover .tooltip-rc  {visibility: visible}
 
 /* MEDIA QUERIES */
+@media (max-width: 1310px) {
+    .navigation {
+        margin: 20px 0 0 5vw;
+    }
+
+    .icon-scroll {bottom: 20vh;}
+}    
+
 @media (max-width: 675px) {
     .case-studies .card, .ux-challenges .card {
         max-width: 320px;
@@ -483,6 +567,10 @@ img.build, img.deliver {
     .case-study-badge, .side-project-badge, .assets-badge {
         margin: 200px 10px;
     }
+    .navigation, #design-lab-anchor {display: none}
+  
+    header {position:initial}
+    .sub-header .flex-box {padding: 40px 0;}
 }
 
 @media (max-width: 800px) {
@@ -491,6 +579,8 @@ img.build, img.deliver {
         margin: 0 5vw 0 5vw;
         padding: 10px;
     }
+
+    #top-anchor > header > div.navigation > a:nth-child(5), .icon-scroll {display: none}
 
     .introduction.left-flex, .left-flex, .right-flex {width: 100%}
     .image img {
@@ -503,6 +593,10 @@ img.build, img.deliver {
     .banners {height: inherit;}
 
     .avatar img {margin-top: 35px;}
+
+    .round-ctas {
+        margin: 55px 0 50px;
+    }
     
     .top-partners {
         text-align: center;
@@ -512,7 +606,9 @@ img.build, img.deliver {
         max-width: 80%;
     }
 
-    .sticky-notes-wrap {text-align: center;}
+    .other-skills-h1 {
+        padding-bottom: 25px;
+    }    
 
     .linkedin, .email {
         width: 125px;
@@ -532,6 +628,8 @@ img.build, img.deliver {
         margin: 0 5vw 0 5vw;
         padding: 10px;
     }
+
+
 
     .footer-content {
         padding: 10px;
