@@ -26,9 +26,10 @@ header {
 }
 
 .navigation a {
-    padding: 0 12px;
+    padding: 0 15px;
     font-weight: 700;
     color: #000;
+    text-decoration: none;
 }
 
 #process-anchor, #projects-anchor, #skills-anchor, #design-lab-anchor {
