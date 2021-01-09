@@ -327,10 +327,8 @@ img.build, img.deliver {
     fill: #FFF;
 }
 
-.case-studies-cards.center-box > div:nth-child(2) > a:nth-child(1) > svg > path,
-.case-studies-cards.center-box > div:nth-child(3) > a:nth-child(1) > svg > path,
-.ux-challenges-cards.center-box > div:nth-child(3) > a:nth-child(1) > svg > path {
-    fill: #000;
+.new-tab-black {
+    fill: #000 !important;
 }
 
 .case-studies {
@@ -341,6 +339,23 @@ img.build, img.deliver {
 .case-studies .center-box {
     display: block;
 }
+
+.case-study-badge, .side-project-badge, .assets-badge {
+    position: absolute;
+    padding: 7px 10px;
+    margin: 258px 10px;
+    font-size: 14px;
+    background-color: #0c93f7;
+    border-radius: 30px;
+    z-index: 1;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px #404040;
+    font-family: helvetica;
+}
+
+.side-project-badge {background-color:#279e00;}
+.assets-badge {background-color:#ea7a1a;}
 
 .process .paragraph {
     margin: 32px auto;
@@ -461,6 +476,9 @@ img.build, img.deliver {
     .case-studies .paragraph, .ux-challenges .paragraph {
         text-align: left;
     }
+    .case-study-badge, .side-project-badge, .assets-badge {
+        margin: 200px 10px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -535,6 +553,10 @@ img.build, img.deliver {
     .ux-challenges > div.center-box > div.ux-challenges-text.ux-challenges-text > h1 {
         text-align: left;
     }
+
+    .case-study-badge, .side-project-badge, .assets-badge {
+        margin: 233px 10px;
+    }
     
 }
 
@@ -545,5 +567,9 @@ img.build, img.deliver {
 
     .avatar img {
         min-width: 265px;
+    }
+
+    .case-study-badge, .side-project-badge, .assets-badge {
+        margin: 209px 10px;
     }
 }
