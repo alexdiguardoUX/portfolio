@@ -564,7 +564,7 @@ img.build, img.deliver {
     margin: 25px auto;
 }
 
-.tooltip-wireframe, .tooltip-rc {
+.tooltip-wireframe, .tooltip-rc, .tooltip-scroll {
     visibility: hidden;
     max-width: 300px;
     background-color: white;
@@ -578,16 +578,30 @@ img.build, img.deliver {
     margin-left: -150px;
     margin-top: -60px;
     line-height: 20px;
-    box-shadow: 1px 1px 20px #000;
+    box-shadow: 1px 1px 20px #0000009c;
+    opacity: 0;
+    transition: opacity 0.8s;
 }
 
-.tooltip-wireframe:after, .tooltip-rc:after {
+.tooltip-scroll {
+    margin-left: -56px;
+    margin-top: -74px;
+    width: 90px;
+    padding: 9px 0px 9px 12px;
+    font-size: 14px;
+}
+
+.tooltip-wireframe:after, .tooltip-rc:after, .tooltip-scroll:after {
     content: "";
     position: absolute;
-    margin-left: -5px;
+    margin-left: -116px;
     top: 100%;
     border: 10px solid #fff;
     border-color: white transparent transparent transparent;
+}
+
+.tooltip-scroll:after {
+    margin-left: -39px;
 }
 
 .tooltip-rc:after {
@@ -596,7 +610,12 @@ img.build, img.deliver {
 
 .tooltip-rc {text-align: center;}
 
-.product-dev-image:hover .tooltip-wireframe, .white-labels-image:hover .tooltip-rc  {visibility: visible}
+.product-dev-image:hover .tooltip-wireframe,
+.white-labels-image:hover .tooltip-rc,
+.icon-scroll:hover .tooltip-scroll  {
+    visibility: visible;
+    opacity: 1;
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 1310px) {
