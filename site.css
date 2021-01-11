@@ -308,6 +308,7 @@ form {display: inline-block}
 .quote-open {
     position:absolute;
     left: 2vw;
+    margin-top: 2vh;
     width: 60px;
 }  
 
