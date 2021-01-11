@@ -305,6 +305,37 @@ form {display: inline-block}
     border: 2px solid black;
 }
 
+.testimonials {
+    background-color: #F2F8FF;
+    border-bottom: 2px dashed #c1c1c1;
+    text-align: center;
+}
+
+.testimonials h1 {
+    padding-top: 50px;
+    margin: 0;
+    
+}
+
+.testimonial {
+    max-width: 415px;
+    padding: 44px;
+    display: inline-block;
+}
+
+.testimonials h3 {
+    font-family: 'Montserrat';
+    color: #2a5a92;
+}
+
+.testimonials p {
+    text-align: left;
+    line-height: 170%;
+    font-size: 14px;
+    font-style: italic;
+    color: #3e5b7d;
+}
+
 .case-studies, .ux-challenges {
     padding: 0 6vw;
 }
@@ -556,6 +587,8 @@ img.build, img.deliver {
     }
 
     .icon-scroll {bottom: 20vh;}
+
+    .testimonial {padding-bottom: 0;}
 }    
 
 @media (max-width: 675px) {
@@ -580,6 +613,8 @@ img.build, img.deliver {
         margin: 0 5vw 0 5vw;
         padding: 10px;
     }
+
+    .testimonial p {font-size: 16px}
 
     #top-anchor > header > div.navigation > a:nth-child(5), .icon-scroll {display: none}
 
