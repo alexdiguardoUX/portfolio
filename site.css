@@ -305,6 +305,23 @@ form {display: inline-block}
     border: 2px solid black;
 }
 
+.quote-open {
+    position:absolute;
+    left: 2vw;
+    width: 60px;
+}  
+
+.quote-open path, .quote-closed path {
+    fill: #bfdcfd;
+}
+
+.quote-closed {
+    position:absolute;
+    right: 2vw;
+    margin-top: 10%;
+    width: 60px;
+}
+
 .testimonials {
     background-color: #F2F8FF;
     border-bottom: 2px dashed #c1c1c1;
@@ -665,11 +682,16 @@ img.build, img.deliver {
         padding: 10px;
     }
 
-
-
     .footer-content {
         padding: 10px;
     }
+} 
+
+@media (max-width: 450px) {
+    .quote-open, .quote-closed {
+        width: 30px;
+    }
+    .quote-closed {margin-top: 34vh;}
 }
 
 @media (max-width: 360px) {
