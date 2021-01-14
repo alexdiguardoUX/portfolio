@@ -96,7 +96,7 @@ form {display: inline-block}
 
 .paragraph {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 180%;
 }
 
 .case-studies-text > p:nth-child(3) {
