@@ -364,6 +364,7 @@ form {display: inline-block}
 .white-labels {
     background-color: #0d93f8;
     color: #FFF;
+    box-shadow: inset #ffffff 0 -5px 5px 0px;
 }
 
 .introduction, .white-labels-text {
@@ -398,6 +399,7 @@ form {display: inline-block}
     color: #000;
     text-align: center;
     padding-bottom: 35px;
+    box-shadow: inset #75c3dc 0 -5px 5px 0px;
 }
 
 .icon {
@@ -469,6 +471,7 @@ img.build, img.deliver {
     background-color: #05a3c9a8;
     color: #002e40;
     padding-bottom: 35px;
+    box-shadow: inset #0a93f7 1px -5px 5px 0px;
 }
 
 .case-studies .center-box {
