@@ -113,14 +113,6 @@ form {display: inline-block}
     font-weight: bold;
 }
 
-.image img {
-    width: 43vw;
-    min-width: 450px;
-    height: auto;
-    margin: 4vh;
-    border-radius: 20px;
-}
-
 .btn-primary {
     background-color: #0c93f7;
     border: none;
@@ -313,6 +305,7 @@ form {display: inline-block}
     height: auto;
     box-shadow: 0 0 11px 0px #00000080;
     border: 2px solid black;
+    margin: 5vh;
 }
 
 .quote-open {
@@ -368,10 +361,6 @@ form {display: inline-block}
     padding: 0 6vw;
 }
 
-.product-dev img {
-    box-shadow: 0px 3px 16px 0px #00000057;
-}
-
 .white-labels {
     background-color: #0d93f8;
     color: #FFF;
@@ -392,6 +381,11 @@ form {display: inline-block}
     background-color: #0a93f8;
     color: #FFF;
     border-bottom: 2px dashed #FFF;
+}
+
+.product-dev-image img {
+    width: 23vw;
+    min-width: 350px;
 }
 
 .skills-bullets {
