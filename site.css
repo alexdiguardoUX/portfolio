@@ -384,6 +384,14 @@ form {display: inline-block}
     border-bottom: 2px dashed #FFF;
 }
 
+.product-dev .left-flex {
+    width: 40%;
+}
+
+.product-dev .right-flex {
+    width: 42%;
+}
+
 .product-dev-image img {
     width: 23vw;
     min-width: 350px;
@@ -662,7 +670,7 @@ img.build, img.deliver {
 
     #top-anchor > header > div.navigation > a:nth-child(5), .icon-scroll {display: none}
 
-    .introduction.left-flex, .left-flex, .right-flex {width: 100%}
+    .introduction.left-flex, .left-flex, .right-flex {width: 100% !important}
     .image img {
         min-width: 320px;
         margin: 20px 0;
