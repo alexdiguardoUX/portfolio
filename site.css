@@ -49,7 +49,7 @@ header {
     background: #f2f8ff;
 }
 
-#projects-anchor {background-color: #75c3dc;}
+#projects-anchor {background-color: #75C3DC;}
 #skills-anchor {background-color: #0a93f8;}
 #design-lab-anchor {background-color:#ffc079;}
 
@@ -475,7 +475,7 @@ img.build, img.deliver {
 }
 
 .case-studies {
-    background-color: #05a3c9a8;
+    background-color: #75C3DC;
     color: #002e40;
     padding-bottom: 35px;
     box-shadow: inset #0a93f7 1px -5px 5px 0px;
