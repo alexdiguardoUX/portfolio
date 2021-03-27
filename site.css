@@ -650,7 +650,7 @@ img.build, img.deliver {
     .case-studies .paragraph, .ux-challenges .paragraph {
         text-align: left;
     }
-    .case-study-badge, .side-project-badge, .assets-badge {
+    .case-study-badge, .ux-badge, .product-design-badge, .prototyping-badge {
         margin: 200px 10px;
     }
     .navigation, #design-lab-anchor {display: none}
