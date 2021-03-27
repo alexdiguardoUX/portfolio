@@ -485,7 +485,7 @@ img.build, img.deliver {
     display: block;
 }
 
-.case-study-badge, .side-project-badge, .assets-badge {
+.case-study-badge, .product-design-badge, .ux-badge, .prototyping-badge {
     position: absolute;
     padding: 7px 10px;
     margin: 258px 10px;
@@ -498,8 +498,9 @@ img.build, img.deliver {
     text-shadow: 1px 1px 2px #404040;
 }
 
-.side-project-badge {background-color:#279e00;}
-.assets-badge {background-color:#ea7a1a;}
+.product-design-badge {background-color:#279e00;}
+.ux-badge {background-color:#ff7600;}
+.prototyping-badge {background-color:#ff2d2d;}
 
 .process .paragraph {
     margin: 32px auto;
