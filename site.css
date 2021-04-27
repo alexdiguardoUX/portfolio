@@ -485,7 +485,7 @@ img.build, img.deliver {
     display: block;
 }
 
-.case-study-badge, .product-design-badge, .ux-badge, .prototyping-badge {
+.mobile-badge, .product-design-badge, .ux-badge, .prototyping-badge {
     position: absolute;
     padding: 7px 10px;
     margin: 258px 10px;
@@ -650,7 +650,7 @@ img.build, img.deliver {
     .case-studies .paragraph, .ux-challenges .paragraph {
         text-align: left;
     }
-    .case-study-badge, .ux-badge, .product-design-badge, .prototyping-badge {
+    .mobile-badge, .ux-badge, .product-design-badge, .prototyping-badge {
         margin: 200px 10px;
     }
     .navigation, #design-lab-anchor {display: none}
@@ -749,7 +749,7 @@ img.build, img.deliver {
         text-align: left;
     }
 
-    .case-study-badge, .side-project-badge, .assets-badge {
+    .mobile-badge, .side-project-badge, .assets-badge {
         margin: 233px 10px;
     }
     
@@ -764,7 +764,7 @@ img.build, img.deliver {
         min-width: 265px;
     }
 
-    .case-study-badge, .side-project-badge, .assets-badge {
+    .mobile-badge, .side-project-badge, .assets-badge {
         margin: 209px 10px;
     }
 }
