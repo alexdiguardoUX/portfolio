@@ -92,7 +92,7 @@ header h2 {
 form {display: inline-block}
 
 .introduction.left-flex {
-    width: 33%;
+    width: 36%;
 }
 
 .left-flex {
@@ -297,7 +297,7 @@ form {display: inline-block}
 .separator {
     margin: 2px;
 }
-
+/* 
 .avatar img {
     border-radius: 100%;
     width: 20vw;
@@ -305,6 +305,13 @@ form {display: inline-block}
     height: auto;
     box-shadow: 0 0 11px 0px #00000080;
     border: 2px solid black;
+    margin: 5vh;
+} */
+
+.avatar img {
+    width: 33vw;
+    min-width: 300px;
+    height: auto;
     margin: 5vh;
 }
 
