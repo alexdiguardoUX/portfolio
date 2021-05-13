@@ -485,14 +485,14 @@ img.build, img.deliver {
     background-color: #75C3DC;
     color: #002e40;
     padding-bottom: 35px;
-    box-shadow: inset #0a93f7 1px -5px 5px 0px;
+    box-shadow: inset #FFF 1px -5px 5px 0px;
 }
 
 .case-studies .center-box {
     display: block;
 }
 
-.mobile-badge, .product-design-badge, .ux-badge, .prototyping-badge {
+.mobile-badge, .product-design-badge, .ux-badge, .prototyping-badge, .exp-badge {
     position: absolute;
     padding: 7px 10px;
     margin: 258px 10px;
@@ -508,6 +508,7 @@ img.build, img.deliver {
 .product-design-badge {background-color:#279e00;}
 .ux-badge {background-color:#ff7600;}
 .prototyping-badge {background-color:#ff2d2d;}
+.exp-badge {background-color: #00b3ab;}
 
 .process .paragraph {
     margin: 32px auto;
@@ -578,6 +579,7 @@ img.build, img.deliver {
 
 .email {
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .footer-content p {
@@ -657,7 +659,7 @@ img.build, img.deliver {
     .case-studies .paragraph, .ux-challenges .paragraph {
         text-align: left;
     }
-    .mobile-badge, .ux-badge, .product-design-badge, .prototyping-badge {
+    .mobile-badge, .ux-badge, .product-design-badge, .prototyping-badge, .exp-badge {
         margin: 200px 10px;
     }
     .navigation, #design-lab-anchor {display: none}

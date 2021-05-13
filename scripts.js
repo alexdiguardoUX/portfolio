@@ -12,3 +12,7 @@ function outFunc() {
     var tooltip = document.getElementById("myTooltip-email");
     tooltip.innerHTML = "Copy email to clipboard";
 }
+
+function emailAlert() {
+    alert("Thank you for your time! Please contact me at alexinfobusiness@gmail.com");
+}
