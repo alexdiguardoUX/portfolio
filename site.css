@@ -83,6 +83,11 @@ header h2 {
     padding: 107px 0 0;
 }
 
+.dot {
+    color: #4dbdff;
+}
+
+
 .flex-box {
     display: flex;
     margin: 0 10px 0px 8vw;
@@ -309,10 +314,10 @@ form {display: inline-block}
 } */
 
 .avatar img {
-    width: 33vw;
+    width: 27vw;
     min-width: 300px;
     height: auto;
-    margin: 5vh;
+    margin: 0;
 }
 
 .quote-open {
@@ -736,6 +741,7 @@ img.build, img.deliver {
         width: 30px;
     }
     .quote-closed {margin-top: 34vh;}
+    .sub-header h1 {font-size: 30px;}
 }
 
 @media (max-width: 360px) {
