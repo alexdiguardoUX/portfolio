@@ -13,7 +13,7 @@ html {
 
 body {
     margin: 0;
-    color: #181818;
+    color: #1A2C4C;
     background-color: #FFF;
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
 }
@@ -23,7 +23,7 @@ header {
     background-color: #FFF;
     position: fixed;     
     z-index: 5;
-    box-shadow: inset 0px -2px 7px #00000015;
+    box-shadow: inset 0px -2px 7px rgb(209 230 255 / 57%);
 }
 
 .name-title, .navigation {
@@ -49,9 +49,9 @@ header {
     background: #f2f8ff;
 }
 
-#projects-anchor {background-color: #75C3DC;}
+/* #projects-anchor {background-color: #75C3DC;}
 #skills-anchor {background-color: #0a93f8;}
-#design-lab-anchor {background-color:#ffc079;}
+#design-lab-anchor {background-color:#ffc079;} */
 
 h1, footer h1 {
     font-size: 35px;
@@ -127,6 +127,7 @@ form {display: inline-block}
     font-weight: 600;
     cursor: pointer;
     transition-duration: 0.4s;
+    box-shadow: rgb(128 186 255) 0px 5px 24px 1px;
 }
 
 .btn-primary:hover {
@@ -416,10 +417,9 @@ form {display: inline-block}
 
 .process  {
     background-color: #F2F8FF;
-    color: #000;
     text-align: center;
     padding-bottom: 35px;
-    box-shadow: inset #75c3dc 0 -5px 5px 0px;
+    border-bottom: 2px dashed #c1c1c1;
 }
 
 .icon {
@@ -487,10 +487,9 @@ img.build, img.deliver {
 }
 
 .case-studies {
-    background-color: #75C3DC;
-    color: #002e40;
+    background-color: #F2F8FF;
     padding-bottom: 35px;
-    box-shadow: inset #FFF 1px -5px 5px 0px;
+    box-shadow: inset 0px -2px 7px rgb(209 230 255 / 57%);
 }
 
 .case-studies .center-box {
@@ -532,7 +531,7 @@ img.build, img.deliver {
 }
 
 .case-studies .card, .ux-challenges .card {
-    box-shadow: 4px 4px 8px 0px #bbbbbb4f;
+    box-shadow: rgb(209 230 255 / 57%) 0px 2px 24px 1px;
     background: #FFF; 
     border-radius: 20px;
     display: inline-block;
