@@ -677,6 +677,10 @@ img.build, img.deliver {
     font-size: 18px;
 }
 
+.case-study ul {
+    line-height: 1.8;
+}
+
 .case-study img {
     margin: 0 auto;
     display: block;
@@ -686,6 +690,12 @@ img.build, img.deliver {
 
 .case-study .hero {
     max-width: 40%;
+}
+
+.youtube-video {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 /* MEDIA QUERIES */

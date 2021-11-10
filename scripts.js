@@ -14,5 +14,5 @@ function outFunc() {
 }
 
 function emailAlert() {
-    alert("Thank you for your time! Please contact me at alexinfobusiness@gmail.com");
+    alert("Thank you for your time! Please contact me at alexinfobusiness@gmail.com or find me on Linkedin.");
 }

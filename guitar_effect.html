@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html id="guitar-effect">
+    <!-- HEADER -->
+    <head>
+        <!-- Hotjar Tracking Code for https://alexdiguardoux.github.io/usability-testing-tool/ -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:2195594,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+        <link rel="stylesheet" type="text/css" href="site.css">
+        <link rel="icon" href="images/favicon.png"/>
+        <title>Alex Di Guardo Portfolio | UX/UI Designer</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <meta name="Description" content="Alex Di Guardo Portfolio - UX/UI Designer"/>
+        <meta name="keywords" content="alex di guardo, UX design, UX designer, UX, UI, UI design, UI designer, Figma, Sketch, wireframes, prototypes, Photoshop" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body id="top-anchor">
+        <header>
+            <div class="name-title">
+                <h1><a href="index.html">Alex Di Guardo</a></h1>
+                <h2>UX/UI Designer</h2>
+            </div>    
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="index.html#projects-anchor">Projects</a>
+                <a href="#contact">Contact Me</a>
+                <a href="#top-anchor">Back to the Top &#8593;</a>
+            </nav>
+        </header>
+        <!-- Case Study -->
+        <div class="case-study">
+            <img class="hero" src="images/guitar_effect/hero_image.png"><br>
+            <h1>Guitar Tone Definer</h1>
+            <h2>A digital effect that can be imported in any audio recording software to make guitars sound more polished and defined.</h2>
+            <section class="project-overview">
+                <h2>Project Overview</h2>
+                <p>As a side project, I run a small website where I sell music production tools created by me, such as sound libraries and tutorials for rock music.<br><br>
+                    Sound Engineering is a complex subject and many beginners spend hours and hours on the internet trying to learn difficult concepts to apply in music production. Nowadays you don’t necessarily need to be an expert sound engineer to achieve decent results as long as you have a good computer and the right software, and that’s how the figure of “Bedroom Producer” became very popular in recent years.
+                </p>    
+            </section>
+
+            <section class="opportunitiy">
+                <h2>How did I come up with it?</h2>
+                <p>in 2019 sales were slowly going down as the market became more saturated due to more competition. The products offered in this market often also sound very similar.<br><br>
+                    <strong>I needed to find areas of opportunities in the market for an innovative idea.</strong>
+                </p>    
+            </section>
+
+            <section class="research">
+                <h2>User Research</h2>
+                <p>In order to understand the current state and struggles of bedroom producers I invited 20 participants from a rock music production community on Reddit to fill a survey with open ended questions.<br><br>
+                    The key question was: <strong>"How do bedroom producers feel about the current process of mixing rock music?"</strong><br><br>
+                    <img src="images/guitar_effect/producer_map.png"><br><br>
+                    <strong>Key learnings:</strong>
+                </p>
+                <ul>
+                    <li>Some participants struggle to achieve the sound of their favourite bands</li>
+                    <li>Most participants find <strong>distorted guitars</strong> the most tedious instrument to work on</li>
+                    <li>Some participants think this is because it's difficult to reach a compromise between power and definition</li>
+                    <li>Some participants say it would be better if <strong>guitar amp simulators</strong> sounded good straight out of the box</li> 
+                </ul> <br>
+                <p>The main take away from this is that working on guitars is the most problematic part of the process.<br><br>
+                    <strong>Example of how complicated manual equalisation can be to process guitars:</strong>
+                </p> 
+                <img src="images/guitar_effect/fabfilter.png">
+            </section>
+
+            <section class="how-might-we">
+                <h2>So how can I contribute to the Bedroom Producers community to achieve great guitar sounds?</h2>
+                <p>There were few solutions I originally considered exploring:</p> 
+                <img src="images/guitar_effect/sketch.png"><br>  
+                <ul>
+                    <li><strong>Youtube tutorial:</strong> Step by step guide on mixing guitars. - <strong>Inexpensive but there are a lot of them already online</strong></li><br> 
+                    <li><strong>Guitar amp simulator:</strong> A plug-in that can be used on all recording softwares and optimised for rock guitars. - <strong>Also fairly covered by big manufacturers and expensive to build</strong></li> <br> 
+                    <li><strong>EQ settings preset:</strong> A template file containing optimal settings for rock guitars - <strong>Inexpensive but can only be compatible with limited EQ plug-ins</strong></li> 
+                </ul>  <br>  
+                <p><strong>Impact/Effort representation:</strong></p> 
+                <img src="images/guitar_effect/impact_effort.png"><br> 
+                <p>The picture wasn't really in my favour as these solutions seemed already pretty common or difficult to achieve.<br><br>
+                    Then I thought: <strong>"What if I can combine 2 ideas and build a simple "EQ Filter" plug-in, easier to develop and usable with all recording software?".</strong>
+                </p>
+            </section>
+
+            <section class="competitors">
+                <h2>Competitor Analysis</h2>
+                <p>After researching competitors who produce similar concepts I established there was a gap in the market, as they offered adaptable products which are not promoted specifically for guitars.</p>
+                <img src="images/guitar_effect/competitors.png"><br> 
+            </section>
+
+            <section class="inspiration">
+                <h2>Inspiration</h2>
+                <p>My idea ultimately was similar to 2 products combined from 2 competitors.<br><br>
+                    <strong>I wanted to keep the semplicity of a "1 knob" plug-in with a single control to regulate the intensity of the effect, combined with the functionality of filtering harsh frequencies, like in the case of Soothe.</strong></p><br>
+                <img src="images/guitar_effect/inspiration.png"><br> 
+            </section>
+
+            <section class="initial-design">
+                <h2>Initial Design</h2>
+                <p>Considering it's an effect for guitars, I wanted to give it a real guitar pedal look and feel. I also had a name for it: <strong>"Guitar Definer".</strong><br><br>
+                    I hired a software developer experienced with building audio plug-ins and we worked remotely together for a few weeks. I initially provided the choice of components and functionality instructions while the developer made the necessary wiring in the back-end.<br><br>
+                    On the left we have the initial prototype made with built-in components offered by the development platform we adopted, Flowstone by DSP Robotics. On the right, it's the first draft of the final design made in Photoshop.
+                </p><br>
+                <img src="images/guitar_effect/initial_design.png"><br> 
+                <p>The control knob consist of a series of images stitched together representing each position.</p><br>
+                <img src="images/guitar_effect/knobs.png"><br> 
+            </section>
+
+            <section class="mpv">
+                <h2>MVP & Testing</h2>
+                <p>My research findings also tell me the majority of bedroom producers in non professional settings are Windows users. For the MVP we focused on building the plug-in it for Windows.<br><br>
+                    10 participants from the music production community on Reddit were invited to participate in the testing phase. I’ve sent them a demo version to use on their music projects and asked for feedbacks.<br><br>
+                    <strong>Key learnings:</strong> 
+                </p>
+                <ul>
+                    <li>Most participants said this is so much faster than manually equalising</li>
+                    <li>Most participants were impressed by the sound of their guitars when using the plug-in</li>
+                    <li>Some participants said they would buy the product</li>
+                    <li>Some participants weren’t impressed by it as they can achieve the same results with other means.</li> 
+                </ul>  
+            </section>
+
+            <section class="final-design">
+                <h2>Final Design</h2>
+                <p>The name was ultimately changed to "Guitar Tone Definer", for the simple fact that the word "tone" has recently become a popular term when referencing to guitar sounds.<br><br>
+                    The design was finalised with the switch being replaced with a more modern pedal button, a metallic texture on the body, and final branding and labelling.
+                </p><br>    
+                <img src="images/guitar_effect/final_design.png" width="50%" height="50%"><br> 
+            </section>
+
+            <section class="launch">
+                <h2>Launch</h2>
+                <p>A demonstrative video was published on Youtube where user showed a sense of appreciation.</p><br>
+                <iframe class="youtube-video" width="100%" height="500px" src="https://www.youtube.com/embed/rma30LTjJlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <section class="outcome">
+                <h2>Outcome</h2>
+                <p>Sales went up and the Guitar Tone Definer became the most wanted product on my e-commerce store.<br><br>
+                    <strong>A recent report shows this product generated by far the most income in 2019 + 2020 combined.</strong>
+                </p><br>
+                <img src="images/guitar_effect/stats.png"><br> 
+            </section>
+            <h2>Thank you for reading!</h2>
+        </div>
+        <script type="text/javascript" src="scripts.js"></script>
+        <!-- FOOTER -->
+        <footer id="contact">
+            <div class="footer-content">
+                <h1>Contact me</h1>
+                <div class="contact-ctas">
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/alexdiguardo/" target="_blank"><img src="images/linkedin-round.png"></a>
+                    </div>
+                    <div class="email" onclick="emailAlert()">
+                        <img src="images/gmail-round.png"></a>
+                    </div>
+                </div>
+                <p>Portfolio entirely built using HTML5, CSS3 & JS<br>Alex Di Guardo © 2021</p>
+            </div>
+        </footer>
+    </body>
+</html>
+    
+    
