@@ -85,7 +85,7 @@ header h2 {
 
 .sub-header {
     background-color: #F2F8FF;
-    border-bottom: 2px dashed #c1c1c1;
+    border-bottom: 2px dashed #bfdcfd;
     min-height: 100vh;
 }
 
@@ -345,7 +345,7 @@ form {display: inline-block}
 
 .testimonials {
     background-color: #F2F8FF;
-    border-bottom: 2px dashed #c1c1c1;
+    border-bottom: 2px dashed #bfdcfd;
     text-align: center;
 }
 
@@ -423,7 +423,7 @@ form {display: inline-block}
     background-color: #F2F8FF;
     text-align: center;
     padding-bottom: 35px;
-    border-bottom: 2px dashed #c1c1c1;
+    border-bottom: 2px dashed #bfdcfd;
 }
 
 .icon {
@@ -696,6 +696,14 @@ img.build, img.deliver {
     display: block;
     margin: 0 auto;
     border-radius: 10px;
+}
+
+
+.video-mockup {
+    border: black solid 10px;
+    border-radius: 20px;
+    box-shadow: #109cff52 1px 11px 11px;
+    margin-left: -10px;
 }
 
 /* MEDIA QUERIES */
