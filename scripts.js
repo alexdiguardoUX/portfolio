@@ -107,7 +107,7 @@ function plusCompareSlides(n) {
     showCompareSlides(slideIndex += n);
 }
 
-function currentWlSlide(n) {
+function currentCompareSlide(n) {
     showCompareSlides(slideIndex = n);
 }
 
