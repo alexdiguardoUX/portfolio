@@ -702,7 +702,7 @@ img.build, img.deliver {
 .video-mockup {
     border: black solid 10px;
     border-radius: 20px;
-    box-shadow: #109cff52 1px 11px 11px;
+    box-shadow: #109cff24 1px 11px 20px;
     margin-left: -10px;
 }
 
