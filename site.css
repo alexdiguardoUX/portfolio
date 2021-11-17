@@ -723,6 +723,10 @@ img.build, img.deliver {
     width: 50%;
 }
 
+.zoom-modal img {
+    margin-bottom: 200px;
+}
+
 /* Zoom modal */
 #myImg {
     border-radius: 5px;
