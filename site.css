@@ -721,21 +721,21 @@ img.build, img.deliver {
     padding: 0 8px;
     display: block;
     margin: 0 auto;
-  }
+}
   
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
   
-  .column {
+.column {
     float: left;
     width: 25%;
-  }
+}
   
   /* The Modal (background) */
-  .modal, .wl-modal, .compare-modal {
+.modal, .wl-modal, .compare-modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -746,45 +746,45 @@ img.build, img.deliver {
     height: 100%;
     overflow: auto;
     background-color: black;
-  }
+}
   
-  /* Modal Content */
-  .modal-content {
+/* Modal Content */
+.modal-content {
     position: relative;
     margin: 0 auto 100px;
     padding: 0;
     width: 90%;
     max-width: 1200px;
-  }
+}
   
   /* The Close Button */
-  .close {
+.close {
     color: white;
     position: absolute;
     top: 62px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
-  }
+}
   
-  .close:hover,
+.close:hover,
   .close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
-  }
+}
   
-  .mySlides, .wl-slides, .compare-slides {
+.mySlides, .wl-slides, .compare-slides {
     display: none;
-  }
+}
   
-  .cursor {
+.cursor {
     cursor: pointer;
-  }
+}
   
-  /* Next & previous buttons */
-  .prev,
-  .next {
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -799,57 +799,73 @@ img.build, img.deliver {
     user-select: none;
     -webkit-user-select: none;
     background-color: rgba(0, 0, 0, 0.8);
-  }
+}
   
-  /* Position the "next button" to the right */
-  .next {
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+}
   
-  /* Number text (1/3 etc) */
-  .numbertext {
+/* Number text (1/3 etc) */
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: -32px;
-  }
+}
   
-  img {
+img {
     margin-bottom: -4px;
-  }
+}
   
-  .caption-container {
+.caption-container {
     text-align: center;
     background-color: black;
     padding: 2px 16px;
     color: white;
-  }
+}
   
-  .demo {
+.demo {
     opacity: 0.6;
-  }
+}
   
-  .active,
-  .demo:hover {
+.active,
+.demo:hover {
     opacity: 1;
-  }
+}
   
-  img.hover-shadow {
+img.hover-shadow {
     transition: 0.3s;
     box-shadow: rgb(209 230 255 / 57%) 0px 2px 24px 1px;
-  }
+}
   
-  .hover-shadow:hover {
+.hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgb(42 90 146 / 20%), 0 6px 20px 0 rgb(42 90 146 / 20%);
-  }
+}
+
+#white_labels .current-design img,
+#white_labels .competitors .lightbox .column img,
+#white_labels .wireframe img,
+#white_labels .branding > a:nth-child(6) > img:nth-child(1),
+#white_labels .branding .lightbox .column img,
+#white_labels .before-after .lightbox .column img {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+
+#itinerary .content img {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+  
 
 /* MEDIA QUERIES */
 @media (max-width: 1310px) {
