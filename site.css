@@ -793,6 +793,10 @@ img.build, img.deliver {
 .thumbnail[alt="My Itinerary Planner"] {
     box-shadow: none;
 }
+
+.download {
+    color: inherit;
+}
   
 
 /* MEDIA QUERIES */
