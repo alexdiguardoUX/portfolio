@@ -142,6 +142,7 @@
 
             <section class="ideation">
                 <h2>Ideation</h2>
+                <h3>How might we make sure users understand card suitability?</h3>
                 <p>For the ideation brainstorm I organised a workshop where I invited other designers, POs and developers to write down their ideas.<br><br>
                     Similar ideas were grouped together to eventually converge into 3 main ideas.<br><br>
                     ”Automatic card check” was identified as the idea to pursue based on some useful considerations. The technical feasibility check also passed as the system can recognise card types based on the first 6 digits, known as BIN (Bank identification number) codes. </p><br>
@@ -150,12 +151,14 @@
 
             <section class="user-flow">
                 <h2>User Flow Interactions</h2>
-                <p>At checkout, a constructive message will display if the card inserted is valid for the security deposit, otherwise the callout message will be triggered.</p>
+                <h3>What happens when users insert a payment card at checkout?</h3>
+                <p>At checkout, a constructive message will display if the card inserted is valid for the security deposit, otherwise a callout message will be triggered.</p>
                 <img src="images/card_check/interactions-flow.png"><br>
             </section>
 
             <section class="concept">
                 <h2>Initial Concept</h2>
+                <h3>First draft displaying a tooltip with the outcome</h3>
                 <p>The very first draft I created featured a tooltip that reassures the user they can use the card inserted for the payment but also informs them if the card is not accepted by the local supplier for the security deposit.<br><br>
                 <img src="images/card_check/concept.png"><br>
                 <p>This went through a feedback session with a Senior Designer who suggested to double check if we already had a pattern in our design system that would accommodate this type of message rather than creating a new pattern.</p>
@@ -163,8 +166,9 @@
 
             <section class="final-design">
                 <h2>Final Design</h2>
+                <h3>Refined version using components from our design system and a more positive "tone of voice"</h3>
                 <p>For the final design I used an alert component from our design system. <strong>The message also suggests to take the "Premium Package" as an alternative for users who don't own a credit card.</strong><br>
-                    <br>This solution should resolve <strong>cognitive overload</strong> issues as it&rsquo;s separated from the full terms and conditions. Also, according to the <strong>Serial position effect</strong>, users tend to forget information placed in the middle of a process or sequence. Placing important information at the end should be more memorable.
+                    <br>This solution should resolve <strong>cognitive overload</strong> issues as it&rsquo;s separated from the full terms and conditions. Also, according to the <strong>"Serial Position Effect"</strong>, users tend to forget information placed in the middle of a process or sequence. Placing important information at the end should be more memorable.
                 </p><br>
                 <img src="images/card_check/final-design.png"><br>  
                 <img src="images/card_check/modal.png"><br> <br>
@@ -174,6 +178,7 @@
 
             <section class="prototype">
                 <h2>Prototype</h2>
+                <h3>Interactions and micro-interactions</h3>
                 <p>The messages will display either when the user selects a card stored in the browser or when they finish typing the 16 digits. <strong>A few milliseconds delay is applied to give the user the chance to look back on the screen.</strong><br><br>
                     The video below shows an example of a user inserting a card which is not valid for the security deposit:   
                 </p><br>
@@ -185,6 +190,7 @@
 
             <section class="usability-testing">
                 <h2>Usability Testing</h2>
+                <h3>Does the solution improve awareness around credit cards conditions?</h3>
                 <p>10 participants were invited to a remote moderated usability study and were tasked to show and explain out loud how they would normally go about renting a car online.<br><br>
                     <strong>Key learnings:</strong>
                 </p>
@@ -199,6 +205,7 @@
 
             <section class="ab-testing">
                 <h2>A/B Testing</h2>
+                <h3>How did the solution perform in the real world?</h3>
                 <p>The solution was handed over to developers who conducted a 3 week split test in European countries to monitor conversion.<br><br>
                     <strong>The conversion was slightly lower than the control version but noticed a 10% "Premium Package" upsell increase</strong> for the variant.
                 </p>
@@ -206,6 +213,7 @@
 
             <section class="release">
                 <h2>The Release + Outcome</h2>
+                <h3>We now have a happier Trust Pilot score!!</h3>
                 <p>The solution went &ldquo;fully-on&rdquo; for desktop in Q4 2021 and as of January 2022, we noticed:</p>
                 <ul>
                     <li><strong>Negative reviews decreased in favour of a 13% increase of "Great" reviews</strong></li> 
