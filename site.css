@@ -107,7 +107,7 @@ header h2 {
 form {display: inline-block}
 
 .introduction.left-flex {
-    width: 36%;
+    width: 50%;
 }
 
 .left-flex {
@@ -238,16 +238,14 @@ form {display: inline-block}
     padding: 0 10px 50px 8vw;
 }
 
+
 .top-partners img {
     padding: 20px;
     max-width: 100% ;
 }
 
-.top-partners .rentalcars {
-    padding-left: 0;
-}
 
-.top-partners .booking, .top-partners .edreams  {
+.top-partners .booking, .top-partners .quidco  {
     padding-bottom: 15px;
 }
 
@@ -267,8 +265,8 @@ form {display: inline-block}
     width: 30px;
     height: 50px;
     margin-left: -20px;
-    bottom: 2vh;
-    margin-top: -35px;
+    bottom: 4vh;
+    /* margin-top: -35px; */
     border: 2px solid #4dbdff;
     border-radius: 25px;
 }
