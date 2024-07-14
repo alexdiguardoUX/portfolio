@@ -957,7 +957,7 @@ img.build, img.deliver {
 
     .case-study iframe {
         width: 100%;
-        height: 200px;
+        height: 100vh;
         margin: 0;
     }
 
