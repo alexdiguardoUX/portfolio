@@ -499,6 +499,13 @@ img.build, img.deliver {
     padding: 10px 0;
 }
 
+.plans {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: -88px;
+}
+
 .case-studies .card, .ux-challenges .card {
     box-shadow: rgb(209 230 255 / 57%) 0px 2px 24px 1px;
     background: #FFF; 
@@ -689,6 +696,22 @@ img.build, img.deliver {
 
 .zoom-modal img {
     margin-bottom: 200px;
+}
+
+
+.product-card {
+    max-width: 310px;
+    margin: 1vw 2vw 2vw 2vw;
+    text-align: center;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0 0  15px;
+}
+
+#buy-now {
+    position: relative;
+    bottom: 84px;
+    width: 250px
 }
 
 /* Zoom modal */
