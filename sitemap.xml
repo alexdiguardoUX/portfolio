@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Portfolio Page -->
+  <url>
+    <loc>https://alexdiguardoux.github.io/portfolio/</loc>
+    <lastmod>2024-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Non-Navigable UX Career Program Page -->
+  <url>
+    <loc>https://alexdiguardoux.github.io/portfolio/ux_career_program.html</loc>
+    <lastmod>2024-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
