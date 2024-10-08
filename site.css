@@ -616,6 +616,10 @@ img.build, img.deliver {
     display: block;
 }
 
+#ux-career-program .case-study {
+    padding: 80px 0 35px;
+}
+
 .case-study h1, .case-study h2, .case-study h3, .case-study h4 {
     text-align: center; 
     max-width: 700px;
@@ -976,7 +980,7 @@ img.build, img.deliver {
 
 /* case-study PAGE MEDIA QUERIES */
 @media only screen and (max-device-width: 500px) {
-    .case-study {padding: 35px 6vw}
+    .case-study {padding: 35px 6vw !important}
 
     .case-study iframe {
         width: 100%;
