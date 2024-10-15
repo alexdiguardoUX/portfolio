@@ -48,6 +48,65 @@ header {
     text-decoration: none;
 }
 
+/* Micro-interaction on load */
+
+.hero-image {
+    opacity: 0; /* start invisible */
+    transform: translateX(100%); /* start off-screen to the right */
+    animation: slideInBounce 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards; /* more natural easing */
+}
+
+@keyframes slideInBounce {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    60% {
+        opacity: 1; /* make sure it stays visible after the slide starts */
+        transform: translateX(0); /* initial slide in */
+    }
+    75% {
+        transform: translateX(10px); /* bounce forward */
+    }
+    90% {
+        transform: translateX(0); /* settle */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* final position */
+    }
+}
+
+
+.introduction {
+    opacity: 0; /* start invisible */
+    transform: translateX(-100%); /* start off-screen to the right */
+    animation: slideInBounceLeft 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards; /* more natural easing */
+}
+
+@keyframes slideInBounceLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(-12px);
+    }
+    90% {
+      transform: translateX(0);
+    }
+    100% {
+      opacity:1;  
+      transform: translateX(0);
+    }
+  }
+
+/* End of Micro-interactions on load */
+
 #process-anchor, #projects-anchor, #skills-anchor, #design-lab-anchor {
     position: relative;
     height: 35px;
@@ -172,7 +231,7 @@ form {display: inline-block}
 
 .round-ctas {
     display: flex;
-    margin: 55px 0 16vh;
+    margin: 32px 0 12vh;
 }
 
 .round-ctas img {
