@@ -55,12 +55,13 @@ header {
     background: #f2f8ff;
 }
 
-h1, h2, h3, h4, footer h1 {
+h1, h2, h3, h4 {
     font-size: 35px;
     font-family: 'Montserrat', sans-serif;
 }
 
-h2 {
+
+h2, footer h1 {
     font-size: 24px;
 }
 
