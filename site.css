@@ -105,6 +105,13 @@ header {
     }
   }
 
+
+  .top-partners {
+    opacity: 0; /* start invisible */
+    transform: translateX(100%); /* start off-screen */
+    animation: slideInBounceLeft 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards; /* more natural easing */
+  }
+
 /* End of Micro-interactions on load */
 
 #process-anchor, #projects-anchor, #skills-anchor, #design-lab-anchor {
@@ -147,14 +154,22 @@ header h2 {
     background-color: #F2F8FF;
     border-bottom: 2px dashed #bfdcfd;
     min-height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
 }
+
 
 .sub-header h1 {
     max-width: 95%;
 }
 
 .sub-header .flex-box {
-    padding: 107px 0 0;
+    padding: 48px 0 0;
 }
 
 .dot {
@@ -162,13 +177,41 @@ header h2 {
 }
 
 
+/* .flex-box {
+    display: flex;
+    margin: 0 10px 0px 8vw;
+    padding: 40px 0;
+} */
+
 .flex-box {
     display: flex;
     margin: 0 10px 0px 8vw;
     padding: 40px 0;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
+
+
+/* #ux-career-program .flex-box {
+    display: flex;
+    margin: 0 10px 0px 8vw;
+    padding: 40px 0;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+} */
+
 form {display: inline-block}
+
+form.select-plans {
+    margin-right: 24px;
+}
 
 .introduction.left-flex {
     width: 50%;
@@ -214,23 +257,21 @@ form {display: inline-block}
 }    
 
 .btn-secondary {
-    border: 2px solid black;
-    border-radius: 80px;
-    color: #000;
+    background-color: #FFF;
+    border: none;
+    padding: 16px;
+    border-radius: 42px;
+    color: #0c93f7;
     font-weight: 600;
     cursor: pointer;
     transition-duration: 0.4s;
-    margin: 75px auto;
-    width: 129px;
-    height: 50px;
-    display: block;
-    line-height: 50px;
-    text-decoration: none;
+    box-shadow: rgba(128, 185, 255, 0.25) 0px 5px 24px 1px;
 }
 
 .btn-secondary:hover {
-    background-color: #ffffffc7;
+    background-color: #0862A6;
     transition: all 0.8s;
+    color: #FFF;
 }  
 
 .round-ctas {
@@ -389,6 +430,11 @@ form {display: inline-block}
     min-width: 300px;
     height: auto;
     margin: 0;
+}
+
+#ux-career-program .avatar img {
+    width: 40vw;
+    margin-top: 6.3%;
 }
 
 .quote-open {
@@ -681,7 +727,7 @@ img.build, img.deliver {
 }
 
 #ux-career-program .case-study {
-    padding: 80px 0 35px;
+    padding: 0 0 35px;
 }
 
 #ux-career-program .case-study h1 {
@@ -906,6 +952,10 @@ img.build, img.deliver {
     box-shadow: none;
 }
 
+.thumbnail[alt="Preview of all the good stuff"] {
+    border-radius: 10px;
+}
+
 .download {
     color: inherit;
 }
@@ -947,14 +997,14 @@ img.build, img.deliver {
     .navigation, #design-lab-anchor {display: none}
   
     header {position:initial}
-    .sub-header .flex-box {padding: 40px 0;}
+    .sub-header .flex-box, #ux-career-program .flex-box {padding: 16px 0 !important;}
 }
 
 @media (max-width: 800px) {
-    .flex-box {
+    .flex-box, #ux-career-program .flex-box {
         display: block;
         margin: 0 5vw 0 5vw;
-        padding: 10px;
+        padding: 107px 0 0;
     }
 
     .testimonial p {font-size: 16px}
