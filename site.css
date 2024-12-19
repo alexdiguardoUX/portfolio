@@ -574,7 +574,7 @@ img.build, img.deliver {
 .case-studies {
     background-color: #F2F8FF;
     padding-bottom: 35px;
-    box-shadow: inset 0px -2px 7px rgb(209 230 255 / 57%);
+    border-bottom: 2px dashed #bfdcfd;
 }
 
 .case-studies .center-box {
