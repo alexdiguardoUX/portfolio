@@ -1102,9 +1102,9 @@ img.build, img.deliver {
     .case-study {padding: 35px 6vw !important}
 
     .case-study iframe {
-        width: 100%;
-        height: 100vh;
-        margin: 0;
+        width: 100% !important;
+        height: 100vh !important;
+        margin: 0 !important;
     }
 
     .case-study img {
