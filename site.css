@@ -244,7 +244,7 @@ form.select-plans {
     font-weight: 600;
     cursor: pointer;
     transition-duration: 0.4s;
-    box-shadow: rgb(128 186 255) 0px 5px 24px 1px;
+    box-shadow: rgb(128 186 255) 0px 5px 16px 1px;
 }
 
 .btn-primary.no-shadow {
