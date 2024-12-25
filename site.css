@@ -832,6 +832,11 @@ img.build, img.deliver {
     width: 250px
 }
 
+.confetti-animation {
+    max-width: 40%;
+    min-width: 330px;
+}
+
 /* Zoom modal */
 #myImg {
     border-radius: 5px;
