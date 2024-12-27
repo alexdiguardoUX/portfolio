@@ -952,7 +952,8 @@ img.build, img.deliver {
 }
 
 .thumbnail[alt="Mobile Examples"],
-.thumbnail[alt="My Itinerary Planner"] {
+.thumbnail[alt="My Itinerary Planner"],
+.wl-wireframe  {
     box-shadow: none;
 }
 
