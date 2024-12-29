@@ -244,7 +244,7 @@ form.select-plans {
     font-weight: 600;
     cursor: pointer;
     transition-duration: 0.4s;
-    box-shadow: rgb(128 186 255) 0px 5px 16px 1px;
+    box-shadow: #0b93f77a 0px 4px 16px 1px;
 }
 
 .btn-primary.no-shadow {
@@ -586,7 +586,7 @@ img.build, img.deliver {
     padding: 7px 10px;
     margin: 258px 10px;
     font-size: 14px;
-    background-color: #0c93f7;
+    background-color: #ff5b17;
     border-radius: 30px;
     z-index: 1;
     font-weight: bold;
