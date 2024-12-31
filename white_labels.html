@@ -32,40 +32,47 @@
                 <a href="index.html">Home</a>
                 <a href="index.html#projects-anchor">Projects</a>
                 <a href="#contact">Contact Me</a>
-                <a href="#top-anchor">Back to the Top &#8593;</a>
             </nav>
         </header>
+
+        <nav class="floating-nav">
+            <a href="#summary">Summary</a>
+            <a href="#process">Process</a>
+            <a href="#ui">UI</a>
+            <a href="#outcome">Outcome</a>
+        </nav>
+
         <!-- Case Study -->
         <div class="case-study">
             <img class="hero" src="images/wl_thumb.png"><br>
-            <h1>Car Rental White Label</h1>
+            <h1 id="summary" class="section">Car Rental White Label</h1>
             <h2>A way to empower hundreds of affiliates to integrate a multi-brand car rental booking system</h2>
+            <div  class="info-container">
+                <div class="info-block">
+                  <p>💼 Rentalcars.com</p>
+                </div>
+                <div class="info-block">
+                  <p>🕰️ 2018 - 2019</p>
+                </div>
+                <div class="info-block">
+                  <p>🧑🏻‍🎨 UX Designer</p>
+                </div>
+            </div>
             <section class="project-overview">
-                <h2>Setting the scene</h2>
+                <h2>In a nutshell...</h2>
                 <p>
                     <strong>The narrative:</strong> We live in an era where business opportunities are almost endless. For a car rental company with hundreds of affiliates, offering white-labelled products to airlines, hotels, and other businesses in the travel industry can turn into a gold mine.<br>
                     <br>
-                    <strong>When:</strong> 2018 - 2019 <br>
-                    <br>
-                    <strong>My responsibilities:</strong>
-                </p>    
-                    <ul>
-                        <li>Research</li> 
-                        <li>UI Design</li> 
-                        <li>Prototyping</li> 
-                        <li>Usability Testing</li>
-                    </ul>
-                <p>    
                     <strong>Business goal:</strong> Increase affiliates retention and attract new businesses to join our affiliate program by modernising outdated solutions.<br>
                     <br>
                     <!-- <strong>Brief:</strong> The design of the current affiliate system is outdated and some features offered across brands are inconsistent. Design a new themable framework which all affiliated brands will sit on with their own look and feel.<br><br> -->
                     <strong>Success metrics:</strong> 
-                    The solution attracted big brands like Jet2 and Ryanair which generated a total of<strong> 370k bookings</strong> in 2019-2020.</li> 
+                    The solution attracted big brands like Jet2 and Ryanair which generated a total of<strong> 370k bookings</strong> between 2019-2020 (pre-covid).</li> 
 
                 </p>
             </section>
 
-            <section class="process">
+            <section id="process" class="process section">
                 <h2>The method behind the madness</h2>
                 <h3>Methodologies used for this project</h3>
                 <img src="images/white_labels/process.png">
@@ -125,7 +132,7 @@
                 <img class="thumbnail wl-wireframe" src="images/white_labels/wireframe.png"></a><br>
             </section>
 
-            <section class="branding">
+            <section id="ui" class="branding section">
                 <h2>Let's give it a bit of colour</h2>
                 <h3>Colours will depend on our affiliates' brand guidelines</h3>
                 <p>The components will be mapped to a colour palette so that the design reflects the affiliate's brand like in the example below:</p><br>
@@ -195,7 +202,7 @@
                 <img class='thumbnail' src="images/white_labels/swap-library.png">
             </section>
 
-            <section class="results">
+            <section id="outcome" class="results section">
                 <h2>Has all this hard work paid off?</h2>
                 <p>Big names like <b>Jet2</b> and <b>Ryanair</b> were attracted by this solution which they implemented and generated a total of...</p>
                 <img src="images/white_labels/results.png">
@@ -220,6 +227,27 @@
             <h2>Want to know more? Reach out!</h2>
         </div>
         <script type="text/javascript" src="scripts.js"></script>
+        <script>
+            document.addEventListener("scroll", () => {
+              const sections = document.querySelectorAll("section");
+              const navLinks = document.querySelectorAll("nav.floating-nav a");
+          
+              let currentSectionId = "";
+          
+              sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+          
+                if (window.scrollY >= sectionTop - window.innerHeight / 2) {
+                  currentSectionId = section.getAttribute("id");
+                }
+              });
+          
+              navLinks.forEach((link) => {
+                link.classList.toggle("active", link.getAttribute("href") === `#${currentSectionId}`);
+              });
+            });
+          </script>
         <!-- FOOTER -->
         <footer id="contact">
             <div class="footer-content">
