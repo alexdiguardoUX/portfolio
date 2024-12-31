@@ -32,35 +32,50 @@
                 <a href="index.html">Home</a>
                 <a href="index.html#projects-anchor">Projects</a>
                 <a href="#contact">Contact Me</a>
-                <a href="#top-anchor">Back to the Top &#8593;</a>
             </nav>
+        </header>
+
+        <nav class="floating-nav">
+            <a href="#summary">Summary</a>
+            <a href="#process">Process</a>
+            <a href="#example">Example</a>
+            <a href="#outcome">Outcome</a>
+        </nav>
+        
         </header>
         <!-- Case Study -->
         <div class="case-study">
             <img class="hero" src="images/design-system-thumb.png"><br>
-            <h1>A consistent experience</h1>
-            <h2>My vision and strategy for a scalable Design System
-            </h2>
+            <h1 id="summary" class="section">A consistent experience</h1>
+            <h2>My vision and strategy for a scalable Design System</h2>
+            <div  class="info-container">
+                <div class="info-block">
+                  <p>💼 MoneySuperMarket</p>
+                </div>
+                <div class="info-block">
+                  <p>🕰️ 2024</p>
+                </div>
+                <div class="info-block">
+                  <p>🧑🏻‍🎨 Senior Product Designer</p>
+                </div>
+            </div>
             <section class="project-overview">
-                <p>
-                    <strong>Company:</strong> MoneySuperMarket<br><br>
-                    <strong>My role:</strong> Senior Product Designer<br><br>
-                    <strong>When:</strong> 2024<br><br>                 
+                <h2>In a nutshell...</h2> 
+                <p>        
                     <strong>The struggle is real:</strong>
-                    Without a Design System, our product suffered from inconsistencies that caused developer inefficiencies, user dropouts, and a fractured experience. In this case study, I share how I strategically tackled this challenge, focusing on Modals & Overlays, to drive consistency, reduce drop-outs, and create business impact.<br>
+                    Without a Design System, our product suffered from inconsistencies that caused developer inefficiencies and a jarring experience.<br>
                     <br>
                     <strong>Vision:</strong> 
                     I believe Design Systems are more than just a collection of components, they're essential for achieving a smooth collaboration between designers and developers. My vision is to create a system that not only streamline workflows but also ensure users enjoy a cohesive experience, building trust and satisfaction at every interaction.<br><br>
                     <strong>Success metrics:</strong> In just three months from deployment, this vision led to:<br><br>
-                    ⬇️ 8% reduction in global drop-out rates<br><br>
-                    ⬆️ 10% increase in reward membership sign-ups<br><br>
+                    ⬆️ 10% increase in reward membership sign-ups thanks to a more streamlined onboarding flow<br><br>
                     ⏳ 20% of time saved thanks to quicker dev handovers<br><br><br>
                     <img class="thumbnail" src="images/design_system/vision-quote.png" width="100%" height="100%" alt="">
                 </p>
                 
             </section>
 
-            <section class="design-sprint">
+            <section id="process" class="design-sprint section">
                 <h2>The method behind the madness</h2> 
                 <p>To gain buy-in for a new system across the business, I needed to present compelling evidence of its benefits. 
                     I leveraged design sprints, a structured, five-day process, to explore solutions quickly and validate ideas effectively.<br><br>
@@ -86,7 +101,7 @@
                 </p>
             </section>
 
-            <section class="anatomy">
+            <section id="example" class="anatomy section">
                 <h2>Something needed to change</h2>
                 <h3>Defining anatomy and rules</h3>
                 <p>To ensure consistency across all modal-based experiences, I established clear specifications within the Design System.
@@ -122,7 +137,7 @@
                 Your browser does not support the video tag.
             </video> 
 
-            <section class="success">
+            <section id="outcome" class="success section">
                 <h2>Success metrics</h2>
                 <p style="text-align: center;">In just three months from deployment, this work led to:
                 </p>
@@ -147,6 +162,27 @@
             <h2>Want to know more? Reach out!</h2>
         </div>
         <script type="text/javascript" src="scripts.js"></script>
+        <script>
+            document.addEventListener("scroll", () => {
+              const sections = document.querySelectorAll("section");
+              const navLinks = document.querySelectorAll("nav.floating-nav a");
+          
+              let currentSectionId = "";
+          
+              sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+          
+                if (window.scrollY >= sectionTop - window.innerHeight / 2) {
+                  currentSectionId = section.getAttribute("id");
+                }
+              });
+          
+              navLinks.forEach((link) => {
+                link.classList.toggle("active", link.getAttribute("href") === `#${currentSectionId}`);
+              });
+            });
+          </script>
         <!-- FOOTER -->
         <footer id="contact">
             <div class="footer-content">
