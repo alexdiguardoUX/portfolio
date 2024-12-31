@@ -48,6 +48,55 @@ header {
     text-decoration: none;
 }
 
+nav.floating-nav {
+    position: fixed ;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 20px;
+    z-index: 1000;
+  }
+  
+  nav.floating-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  nav.floating-nav a:hover {
+    background: #0078d4;
+    color: white;
+  }
+  
+  /* Optional Styling for Current Section Highlight */
+  nav.floating-nav a.active {
+    background: #0078d4;
+    color: white;
+  }
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    nav.floating-nav {
+      gap: 16px; /* Reduce space between links */
+      padding: 8px 12px; /* Adjust padding to fit smaller screens */
+    }
+  
+    nav.floating-nav a {
+      font-size: 12px; /* Slightly smaller text for smaller screens */
+      padding: 6px 12px; /* Reduce padding for smaller touch targets */
+    }
+  }
+
+
 /* Micro-interaction on load */
 
 .hero-image {
@@ -1152,6 +1201,7 @@ img.build, img.deliver {
         width: 100% !important;
         height: 100vh !important;
         margin: 0 !important;
+        transform: scale(0.9);
     }
 
     .case-study img {

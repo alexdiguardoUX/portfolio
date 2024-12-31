@@ -32,16 +32,22 @@
                 <a href="index.html">Home</a>
                 <a href="index.html#projects-anchor">Projects</a>
                 <a href="#contact">Contact Me</a>
-                <a href="#top-anchor">Back to the Top &#8593;</a>
             </nav>
         </header>
+
+        <nav class="floating-nav">
+            <a href="#summary">Summary</a>
+            <a href="#process">Process</a>
+            <a href="#final-product">UI</a>
+            <a href="#outcome">Outcome</a>
+        </nav>
+
         <!-- Case Study -->
         <div class="case-study">
             <img class="hero" src="images/ssc-thumb.png"><br>
-            <h1>SuperSaveClub</h1>
+            <h1 id="summary" class="section">SuperSaveClub</h1>
             <h2>The MoneySuperMarket reward program which reached 280k members in 12 months</h2>
-
-            <div class="info-container">
+            <div  class="info-container">
                 <div class="info-block">
                   <p>💼 MoneySuperMarket</p>
                 </div>
@@ -70,7 +76,7 @@
                 </p>
             </section>
 
-            <section class="timeline">
+            <section id="process" class="timeline section">
                 <h2>The road to success</h2>
                 <h3>My journey on the project</h3>
                 
@@ -170,13 +176,13 @@
                 </p>
             </section>
 
-            <section class="transformation">
+            <section id="final-product" class="transformation section">
                 <h2>Transformation over optimisation</h2>
                 <h3>The future of our mobile app experience</h3>
                 <p>One of our key business strategies for 2024 was to revamp the user experience of our mobile app by incorporating modern design patterns and a fresh look and feel. The first to benefit from this transformation was our SuperSaveClub.
                     <h4>Watch it in action</h4>
                     <iframe src="https://player.vimeo.com/video/1041339016?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                        style="width: 375px;height: 812px;margin: 0 auto;display: block;border-radius: 8px;" title="scc-video-new" data-ready="true">
+                        style="height: 700px;margin: 0 auto;display: block;border-radius: 8px;" title="scc-video-new" data-ready="true">
                     </iframe>
                 </p>
             </section>
@@ -194,7 +200,7 @@
                 </p>
             </section>
 
-            <section class="results">
+            <section id="outcome" class="results section">
                 <h2>Has all this hard work paid off?</h2>
                 <h3>Success metrics in 2024</h3>
                 <img src="images/SSC/metrics.png">
@@ -226,6 +232,27 @@
             <h2>Want to know more? Reach out!</h2>
         </div>
         <script type="text/javascript" src="scripts.js"></script>
+        <script>
+            document.addEventListener("scroll", () => {
+              const sections = document.querySelectorAll("section");
+              const navLinks = document.querySelectorAll("nav.floating-nav a");
+          
+              let currentSectionId = "";
+          
+              sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+          
+                if (window.scrollY >= sectionTop - window.innerHeight / 2) {
+                  currentSectionId = section.getAttribute("id");
+                }
+              });
+          
+              navLinks.forEach((link) => {
+                link.classList.toggle("active", link.getAttribute("href") === `#${currentSectionId}`);
+              });
+            });
+          </script>
         <!-- FOOTER -->
         <footer id="contact">
             <div class="footer-content">
