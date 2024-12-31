@@ -93,19 +93,18 @@
                     <img class="thumbnail" src="images/design_system/too-many-modals.png" width="100%" height="100%" alt="">
                 </div>  
             </section>
-
+<!-- 
             <section class="business-impact">
                 <h2>How does it affect the business?</h2>
-                <p>To understand the effect on the business from this jarring experience, I analysed key metrics related to reward membership sign-ups, using this as a sample to assess the broader impact.<br><br>
                     <img class="thumbnail" src="images/design_system/problem-metrics.png" width="100%" height="100%" alt="">
                 </p>
-            </section>
+            </section> -->
 
             <section id="example" class="anatomy section">
                 <h2>Something needed to change</h2>
                 <h3>Defining anatomy and rules</h3>
-                <p>To ensure consistency across all modal-based experiences, I established clear specifications within the Design System.
-                    This included defining the anatomy of modals and their use cases.
+                <p>
+                    Modals were <strong>reduced to 3 variants compared to the 20 different ones</strong> flying around and were restricted to specific uses cases.
                 </p>
                 <img class="thumbnail" src="images/design_system/Overlays.png" width="100%" height="100%" alt=" ">
             </section>
@@ -162,27 +161,6 @@
             <h2>Want to know more? Reach out!</h2>
         </div>
         <script type="text/javascript" src="scripts.js"></script>
-        <script>
-            document.addEventListener("scroll", () => {
-              const sections = document.querySelectorAll("section");
-              const navLinks = document.querySelectorAll("nav.floating-nav a");
-          
-              let currentSectionId = "";
-          
-              sections.forEach((section) => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
-          
-                if (window.scrollY >= sectionTop - window.innerHeight / 2) {
-                  currentSectionId = section.getAttribute("id");
-                }
-              });
-          
-              navLinks.forEach((link) => {
-                link.classList.toggle("active", link.getAttribute("href") === `#${currentSectionId}`);
-              });
-            });
-          </script>
         <!-- FOOTER -->
         <footer id="contact">
             <div class="footer-content">

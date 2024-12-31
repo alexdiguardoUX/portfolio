@@ -227,27 +227,6 @@
             <h2>Want to know more? Reach out!</h2>
         </div>
         <script type="text/javascript" src="scripts.js"></script>
-        <script>
-            document.addEventListener("scroll", () => {
-              const sections = document.querySelectorAll("section");
-              const navLinks = document.querySelectorAll("nav.floating-nav a");
-          
-              let currentSectionId = "";
-          
-              sections.forEach((section) => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
-          
-                if (window.scrollY >= sectionTop - window.innerHeight / 2) {
-                  currentSectionId = section.getAttribute("id");
-                }
-              });
-          
-              navLinks.forEach((link) => {
-                link.classList.toggle("active", link.getAttribute("href") === `#${currentSectionId}`);
-              });
-            });
-          </script>
         <!-- FOOTER -->
         <footer id="contact">
             <div class="footer-content">
