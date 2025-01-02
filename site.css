@@ -865,6 +865,8 @@ img.build, img.deliver {
     max-width: 40%;
 }
 
+
+
 .youtube-video {
     display: block;
     margin: 0 auto;
@@ -1094,6 +1096,12 @@ img.build, img.deliver {
   
     header {position:initial}
     .sub-header .flex-box, #ux-career-program .flex-box {padding: 16px 0 !important;}
+
+    #ssc video {
+        width: 80%;
+        height: 80%;
+    }
+    
 }
 
 @media (max-width: 800px) {
