@@ -1123,6 +1123,19 @@ img.build, img.deliver {
     border-color: #007bff;
 }
   
+#search-bar-disabled {
+    background-color: #e7e7e7;
+    pointer-events: none; /* Prevent interaction */
+    opacity: 0.6; /* Reduce opacity for a greyed-out effect */
+    border: 1px solid #c4c4c4;
+}
+
+.chat-bar {
+    position: absolute;
+    bottom: 8px;
+    width: 90% !important;
+}
+
 .dropdown {
     width: 100%;
 }
@@ -1156,6 +1169,7 @@ img.build, img.deliver {
 
 .dropdown li:active {
     background-color: #d1e7ff; /* Different background when clicked */
+    transition: background-color 0.2s ease;
 }
 
 
@@ -1163,14 +1177,14 @@ img.build, img.deliver {
 .dialog-box {
     position: fixed;
     bottom: -100%; /* Start off-screen at the bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 1000px;
+    right: 1%;
+    /* transform: translateX(-50%); */
+    width: 100%;
+    max-width: 343px;
     padding: 20px;
     background: white;
     box-shadow: 0 4px 20px rgb(166 198 237 / 64%); /* Modern soft shadow */
-    border-radius: 10px 10px 0 0;
+    border-radius: 16px 16px 0 0;
     z-index: 1000;
     opacity: 0; /* Initially hidden */
     transition: bottom 0.8s ease-out, opacity 0.5s ease-out;
@@ -1179,7 +1193,7 @@ img.build, img.deliver {
 }
 
 .dialog-box.show {
-    bottom: 0; /* Slide up to the bottom of the screen */
+    bottom: 0px; /* Slide up to the bottom of the screen */
     opacity: 1; /* Fade in */
 }
 
@@ -1219,17 +1233,14 @@ img.build, img.deliver {
     box-shadow: 0 0 5px #FFF; /* Add a subtle glow effect */
 }
 
-@media (max-width: 675px) {
-    .dialog-box {
-        max-width: 500px;
-        height: 90vh;
-    }
-}
 
-@media (max-width: 520px) {
+
+
+@media (max-width: 390px) {
     .dialog-box {
-        max-width: 343px;
         height: 90vh;
+        max-width: 300px;
+        right: inherit;
     }
 }
   
