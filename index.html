@@ -77,7 +77,7 @@
         
         <section class="ai-search">
             <div class="help-panel">
-                <h1>How can I help you today?</h1>
+                <h1 class="ai-heading">How can I help you today?</h1>
                 <span>Follow one of these suggestions to get an idea of what type of designer Alex is</span><br><br>
                 <div class="search-bar">
                     <form id="search-form">
@@ -85,9 +85,10 @@
                     </form>
                     <div class="dropdown">
                         <ul>
-                            <li data-dialog="productDesign">↪️ What’s Product Design for Alex?</li>
-                            <li data-dialog="achievements">↪️ What are Alex's proudest achievements?</li>
-                            <li data-dialog="designSystems">↪️ Is Alex familiar with design systems?</li>
+                            <li data-dialog="openToWork">Is Alex open to new roles?</li>
+                            <li data-dialog="productDesign">What's Product Design for Alex?</li>
+                            <li data-dialog="UXUI">Is Alex more UX or UI?</li>
+                            <li data-dialog="designSystems">Is Alex familiar with design systems?</li>
                         </ul>
                     </div>
                     <div id="dialogBox" class="dialog-box">
@@ -112,9 +113,21 @@
         
                 // Dialog content mapping
                 const dialogContent = {
+                    openToWork: `
+                        <img id="ai-agent-icon" src="images/ai star.gif" class="animated-icon"><br>
+                        <strong>Is Alex open to new roles?</strong><br><br>
+                        Alex would love to connect if you or your company value user-centred design paired with an innovative mindset.<br><br>
+                        • <strong>Job:</strong> UX / Product Designer<br><br>
+                        • <strong>Where:</strong> Manchester based - Hybrid<br><br> 
+                        • <strong>Salary range:</strong> 50k - 55k <br><br>
+                        <strong>Likedin:</strong> <a href="https://www.linkedin.com/in/alexdiguardo/" target="__blank">linkedin.com/in/alexdiguardo/</a><br><br>
+                        <form class=chat-bar>
+                            <input id="search-bar-disabled"; type="text" placeholder="This is an AI simulation, not a real chat" /> 
+                        </form>
+                    `,
                     productDesign: `
                         <img id="ai-agent-icon" src="images/ai star.gif" class="animated-icon"><br>
-                        <strong>What’s Product Design for Alex?</strong><br><br>
+                        <strong>What's Product Design for Alex?</strong><br><br>
                         For Alex, Product Design extends beyond traditional UX.<br><br>
                         It's about staying user-focused while also understanding the bigger picture, uncovering the <strong>WHY</strong> behind a design, assessing risks, and evaluating its impact on the business.<br><br>
                         <strong>Case studies:</strong> <a href="design_system.html">Design System</a> | <a href="super_save_club.html">Rewards Program</a> | <a href="white_labels.html">Travel White Labels</a><br><br>
@@ -122,8 +135,25 @@
                             <input id="search-bar-disabled"; type="text" placeholder="This is an AI simulation, not a real chat" /> 
                         </form>
                     `,
-                    achievements: "Alex's proudest achievements include leading a design system overhaul and mentoring junior designers.",
-                    designSystems: "Alex is proficient with design systems, focusing on creating consistency across various projects."
+                    UXUI: `
+                        <img id="ai-agent-icon" src="images/ai star.gif" class="animated-icon"><br>
+                        <strong>Is Alex more UX or UI?</strong><br><br>
+                        Alex is skilled at leading the end-to-end design process, including strategic planning, discovery, research, UI design, and user testing, with a proven track record of achievements.<br><br>
+                        <strong>Case studies:</strong> <a href="design_system.html">Design System</a> | <a href="super_save_club.html">Rewards Program</a> | <a href="white_labels.html">Travel White Labels</a><br><br>
+                        <form class=chat-bar>
+                            <input id="search-bar-disabled"; type="text" placeholder="This is an AI simulation, not a real chat" /> 
+                        </form>
+                    `,
+                    designSystems: `
+                        <img id="ai-agent-icon" src="images/ai star.gif" class="animated-icon"><br>
+                        <strong>Is Alex familiar with design systems?</strong><br><br>
+                        Alex contributes daily to design systems and believes they're more than just a collection of components.<br><br>
+                        They're essential for streamlining workflows but also ensure users enjoy a cohesive experience, building trust and satisfaction.<br><br>
+                        <strong>Case study:</strong> <a href="design_system.html">Design System - A Consistent Experience</a><br><br>
+                        <form class=chat-bar>
+                            <input id="search-bar-disabled"; type="text" placeholder="This is an AI simulation, not a real chat" /> 
+                        </form>
+                    `
                 };
         
                 // Show dialog on click of a list item

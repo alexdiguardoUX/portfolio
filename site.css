@@ -1086,8 +1086,15 @@ img.build, img.deliver {
 .help-panel h1 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #444;
+    /* color: #444; */
 }
+
+.help-panel .ai-heading {
+    background: linear-gradient(90deg, rgb(87 142 255) 26%, rgb(255 36 59) 84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .search-bar {
     position: relative; /* Enables positioning for children */
@@ -1095,7 +1102,7 @@ img.build, img.deliver {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background: radial-gradient(circle, rgba(174,216,238,1) 0%, rgba(148,160,233,1) 100%);
+    background: radial-gradient(circle, rgb(191 238 253) 0%, rgb(194 211 255) 100%);
     border-radius: 12px;
     width: auto;
     max-width: 600px;
@@ -1134,6 +1141,8 @@ img.build, img.deliver {
     bottom: 8px;
     width: 90% !important;
 }
+
+
 
 .dropdown {
     width: 100%;
@@ -1252,6 +1261,9 @@ img.build, img.deliver {
         height: 90vh;
         max-width: 300px;
         right: inherit;
+    }
+    .chat-bar-hide {
+        display: none !important;
     }
 }
   
