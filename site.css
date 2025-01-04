@@ -1090,7 +1090,7 @@ img.build, img.deliver {
 }
 
 .help-panel .ai-heading {
-    background: linear-gradient(90deg, rgb(87 142 255) 26%, rgb(255 36 59) 84%);
+    background: linear-gradient(90deg, #3ABCFE 26%, #F000F7 84%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
