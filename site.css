@@ -1149,7 +1149,13 @@ img.build, img.deliver {
 }
   
 .dropdown li:hover {
-    background-color: #f0f0f0;
+    background-color: #f2f8ff; /* Softer background */
+    padding-left: 14px; /* Indentation for hover state */
+    transition: all 0.2s ease; /* Smooth transition */
+}
+
+.dropdown li:active {
+    background-color: #d1e7ff; /* Different background when clicked */
 }
 
 
@@ -1163,7 +1169,7 @@ img.build, img.deliver {
     max-width: 1000px;
     padding: 20px;
     background: white;
-    box-shadow: 0 4px 20px rgb(166 198 237); /* Modern soft shadow */
+    box-shadow: 0 4px 20px rgb(166 198 237 / 64%); /* Modern soft shadow */
     border-radius: 10px 10px 0 0;
     z-index: 1000;
     opacity: 0; /* Initially hidden */
@@ -1204,6 +1210,13 @@ img.build, img.deliver {
   
 .close-button:hover {
     color: #000; /* Highlight red when hovered */
+}
+
+/* Input focus effect */
+.search-bar input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px #FFF; /* Add a subtle glow effect */
 }
 
 @media (max-width: 675px) {
