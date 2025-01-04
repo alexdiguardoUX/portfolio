@@ -1258,7 +1258,7 @@ img.build, img.deliver {
 
 @media (max-width: 390px) {
     .dialog-box {
-        height: 90vh;
+        height: 85vh;
         max-width: 300px;
         right: inherit;
     }
