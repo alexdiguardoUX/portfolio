@@ -563,13 +563,15 @@ form.select-plans {
 
 .testimonial {
     max-width: 415px;
-    padding: 44px;
+    padding: 32px;
     display: inline-block;
 }
 
 .testimonials h3 {
     font-family: 'Montserrat';
     color: #2a5a92;
+    text-align: left;
+    margin-bottom: 8px;
 }
 
 .testimonials p {
@@ -578,6 +580,7 @@ form.select-plans {
     font-size: 14px;
     font-style: italic;
     color: #3e5b7d;
+    margin-top: 0;
 }
 
 .case-studies, .ux-challenges {
