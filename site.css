@@ -53,7 +53,7 @@ nav.floating-nav {
     bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
-    background: white;
+    background: #ffffffb3;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     display: flex;
@@ -61,7 +61,10 @@ nav.floating-nav {
     padding: 10px 20px;
     gap: 20px;
     z-index: 1000;
-  }
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+}
+    
   
   nav.floating-nav a {
     text-decoration: none;
