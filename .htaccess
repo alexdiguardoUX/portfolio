@@ -1,0 +1,37 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Allow Access to Image Files
+<FilesMatch "\.(jpg|jpeg|png|gif|svg|webp)$">
+    Require all granted
+</FilesMatch>
+
+# Disable Hotlinking Protection (if needed)
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?alexdiguardo-ux\.com/ [NC]
+RewriteCond %{HTTP_REFERER} !^https?://alexdiguardo-ux\.com/ [NC]
+RewriteRule \.(jpg|jpeg|png|gif|svg|webp)$ - [L]
+
+# Ensure HTTPS for All Resources
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Browser Caching for Static Files (Optional)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
+
+# Prevent Directory Listing
+Options -Indexes
+
+# Prevent Access to Hidden Files
+<FilesMatch "^\.">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
