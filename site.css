@@ -229,6 +229,14 @@ header h2 {
     color: #4dbdff;
 }
 
+.title-subtitle h1, .title-subtitle h3 {
+    margin: 4px 0;
+}
+
+.title-subtitle h1 {
+    font-size: 40px;
+}
+
 
 /* .flex-box {
     display: flex;
@@ -267,7 +275,7 @@ form.select-plans {
 }
 
 .introduction.left-flex {
-    width: 50%;
+    width: 44%;
 }
 
 .left-flex {
