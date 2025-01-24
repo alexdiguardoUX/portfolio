@@ -203,6 +203,12 @@ header h2 {
     font-size: 15px;
 }
 
+.clickable {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .sub-header {
     background-color: #F2F8FF;
     border-bottom: 2px dashed #bfdcfd;
