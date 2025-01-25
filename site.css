@@ -29,11 +29,28 @@ header {
     z-index: 5;
     box-shadow: inset 0px -2px 7px rgb(209 230 255 / 57%);
     top: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .name-title, .navigation {
     display: inline-block;
 }
+
+.name-title {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 7.5%;
+}
+
+
 
 .name-title a {
     color: inherit;
@@ -42,7 +59,7 @@ header {
 
 .navigation {
     margin: 20px 0 0 39vw;
-    position: absolute; 
+    /* position: absolute;  */
 }
 
 .navigation a {
@@ -197,12 +214,12 @@ h4 {
 }
 
 header h1 {
-    margin: 10px 0 3px 8vw;
+    margin: 0;
     font-size: 20px;
 }
 
 header h2 {
-    margin: 0 0 10px 8vw;
+    margin:0;
     font-weight: 500;
     font-size: 15px;
 }
@@ -1341,7 +1358,7 @@ img.build, img.deliver {
 /* MEDIA QUERIES */
 @media (max-width: 1310px) {
     .navigation {
-        margin: 20px 0 0 5vw;
+        margin: 20px 0 0 0;
     }
 
     .icon-scroll {bottom: 20vh;}
@@ -1368,8 +1385,13 @@ img.build, img.deliver {
         width: 80%;
         height: 80%;
     }
-
     
+}
+
+@media (min-width: 800px) {
+    .name-title img {
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
@@ -1391,6 +1413,7 @@ img.build, img.deliver {
     .image img {
         min-width: 320px;
         margin: 20px 0;
+        display: none;
     }
 
     .avatar img {margin-top: 35px;}
