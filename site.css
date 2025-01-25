@@ -1372,7 +1372,7 @@ img.build, img.deliver {
 @media (max-width: 800px) {
     .flex-box, #ux-career-program .flex-box, #ebook .flex-box {
         display: block;
-        margin: 0 5vw 0 5vw;
+        margin: 0 16px 0 16px;
         padding: 107px 0 0;
     }
 
