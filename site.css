@@ -1377,7 +1377,7 @@ img.build, img.deliver {
     .flex-box, #ux-career-program .flex-box, #ebook .flex-box {
         display: block;
         margin: 0 16px 0 16px;
-        padding: 107px 0 0;
+        padding: 0 !important;
     }
 
     .testimonial p {font-size: 16px}
@@ -1472,7 +1472,7 @@ img.build, img.deliver {
 
 /* case-study PAGE MEDIA QUERIES */
 @media only screen and (max-device-width: 500px) {
-    .case-study {padding: 35px 6vw !important}
+    .case-study {padding: 35px 16px !important}
 
     .case-study iframe {
         width: 100% !important;
