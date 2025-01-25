@@ -1368,6 +1368,12 @@ img.build, img.deliver {
         width: 80%;
         height: 80%;
     }
+
+    .price-cta {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
     
 }
 
