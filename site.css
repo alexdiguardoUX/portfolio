@@ -1369,11 +1369,6 @@ img.build, img.deliver {
         height: 80%;
     }
 
-    .price-cta {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
     
 }
 
@@ -1436,11 +1431,6 @@ img.build, img.deliver {
     }
     .quote-closed {margin-top: 34vh;}
     .sub-header h1 {font-size: 30px;}
-    .price-cta {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
 }
 
 @media (max-width: 360px) {
