@@ -1378,7 +1378,7 @@ img.build, img.deliver {
         text-align: left;
     }
     .mobile-badge, .ux-badge, .product-design-badge, .prototyping-badge, .exp-badge {
-        margin: 200px 10px;
+        margin: 185px 16px;
     }
     .navigation, #design-lab-anchor {display: none}
   
