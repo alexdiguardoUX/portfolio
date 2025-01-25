@@ -349,7 +349,7 @@ form.select-plans {
 .btn-primary, .buy-now-btn   {
     background-color: #0c93f7;
     border: none;
-    padding: 16px 54px;
+    padding: 16px;
     border-radius: 42px;
     color: #FFF;
     font-weight: 600;
