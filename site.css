@@ -282,7 +282,7 @@ header h2 {
 }
 
 #ebook .buy-now-btn {
-    padding: 16px;
+    padding: 16px 64px;
 }
 
 .rating-badge {
@@ -305,10 +305,7 @@ header h2 {
     /* transform: rotate(-10deg);  */
     position: relative; 
   }
-
   
-  
-
 
 
 /* #ux-career-program .flex-box {
@@ -323,6 +320,7 @@ header h2 {
 } */
 
 form {display: inline-block}
+
 
 form.select-plans {
     margin-right: 24px;
@@ -1428,6 +1426,11 @@ img.build, img.deliver {
     }
     .quote-closed {margin-top: 34vh;}
     .sub-header h1 {font-size: 30px;}
+    .price-cta {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 @media (max-width: 360px) {
