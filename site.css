@@ -40,6 +40,10 @@ header {
     display: inline-block;
 }
 
+.name-title img {
+    margin-right: 8px;
+}
+
 .name-title {
     display: flex;
     flex-direction: row;
