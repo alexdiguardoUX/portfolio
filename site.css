@@ -261,6 +261,50 @@ header h2 {
     align-items: center;
 }
 
+#ebook .flex-box {
+    margin: 0 auto;
+}
+
+#ebook .introduction.left-flex {
+    width: 35vw;
+}
+
+#ebook .right-flex {
+    width: 49vw;
+}    
+
+#ebook .case-study {
+    padding: 32px 0 32px;
+}
+
+#ebook .buy-now-btn {
+    padding: 16px;
+}
+
+.rating-badge {
+    position: relative;
+    left: 8px;
+    bottom: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #F44336;
+}
+
+.price-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #F44336; /* Red color */
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    /* transform: rotate(-10deg);  */
+    position: relative; 
+  }
+
+  
+  
+
 
 
 /* #ux-career-program .flex-box {
@@ -302,16 +346,17 @@ form.select-plans {
     font-weight: bold;
 }
 
-.btn-primary {
+.btn-primary, .buy-now-btn   {
     background-color: #0c93f7;
     border: none;
-    padding: 16px;
+    padding: 16px 54px;
     border-radius: 42px;
     color: #FFF;
     font-weight: 600;
     cursor: pointer;
     transition-duration: 0.4s;
     box-shadow: #0b93f77a 0px 4px 16px 1px;
+    font-size: 16px;
 }
 
 .btn-primary.no-shadow {
@@ -1325,7 +1370,7 @@ img.build, img.deliver {
 }
 
 @media (max-width: 800px) {
-    .flex-box, #ux-career-program .flex-box {
+    .flex-box, #ux-career-program .flex-box, #ebook .flex-box {
         display: block;
         margin: 0 5vw 0 5vw;
         padding: 107px 0 0;
@@ -1436,7 +1481,7 @@ img.build, img.deliver {
         max-width: 100% !important;
     }
 
-    #ux-career-program .case-study {
+    #ux-career-program .case-study, #ebook .case-studies {
         padding-top: 16px !important;
     }
 }    
