@@ -1384,6 +1384,10 @@ img.build, img.deliver {
         padding: 0 !important;
     }
 
+    .case-study {
+        padding: 35px 16px !important;
+    }
+
     .testimonial p {font-size: 16px}
 
     #top-anchor > header > div.navigation > a:nth-child(5), .icon-scroll, #top-anchor > header > nav > a:nth-child(4) {display: none}
