@@ -5,6 +5,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 @media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
@@ -1360,7 +1364,7 @@ img.build, img.deliver {
     .navigation, #design-lab-anchor {display: none}
   
     header {position:initial}
-    .sub-header .flex-box, #ux-career-program .flex-box {padding: 16px 0 !important;}
+    /* .sub-header .flex-box, #ux-career-program .flex-box {padding: 16px 0 !important;} */
 
     #ssc video {
         width: 80%;
