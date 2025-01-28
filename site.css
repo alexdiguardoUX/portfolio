@@ -1420,6 +1420,11 @@ img.build, img.deliver {
         display: none;
     }
 
+    #ebook .hero-image {
+        display: block;
+        margin: 0 auto;
+    }
+
     .avatar img {margin-top: 35px;}
 
     .round-ctas {
