@@ -306,6 +306,11 @@ header h2 {
     padding: 16px 64px;
 }
 
+#ebook .hero-image{
+    width: 80%;
+    box-shadow: none;
+}
+
 .rating-badge {
     position: relative;
     left: 8px;
@@ -1423,6 +1428,10 @@ img.build, img.deliver {
     #ebook .hero-image {
         display: block;
         margin: 0 auto;
+    }
+
+    #ebook .zoom-modal-content {
+        max-width: 100%;
     }
 
     .avatar img {margin-top: 35px;}
