@@ -903,6 +903,11 @@ img.build, img.deliver {
 }
 
 /* Case Study */
+#ssc .strategy ul, #ssc .card-sort ul {
+    list-style-type: none; /* Removes the default bullets */
+    padding-left: 0; /* Optional: Removes left padding if needed */
+}
+
 .case-study {
     box-shadow: inset 0px -2px 7px rgb(209 230 255 / 57%);
     padding: 124px 0 35px;
