@@ -1221,12 +1221,6 @@ img.build, img.deliver {
     color: inherit;
 }
 
-.affiliates-validation {
-    background-image: url(images/white_labels/approved.png);
-    background-repeat: no-repeat;
-    background-size: 100px;
-    background-position: top right 105px;
-}
 
 @media (max-width: 700px) {
     .affiliates-validation {
