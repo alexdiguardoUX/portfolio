@@ -256,8 +256,8 @@ header h2 {
     padding: 48px 0 0;
 }
 
-.dot {
-    color: #4dbdff;
+.sub-header h1 span {
+    color: #0c93f7;
 }
 
 .title-subtitle h1, .title-subtitle h3 {
@@ -607,10 +607,11 @@ form.select-plans {
 }
 
 .avatar img {
-    width: 27vw;
+    width: 30vw;
     min-width: 300px;
     height: auto;
     margin: 0;
+    margin-bottom: 32px;
 }
 
 #ux-career-program .avatar img {
