@@ -265,6 +265,10 @@ header h2 {
     margin: 4px 0;
 }
 
+.sub-header p {
+    font-size: 22px;
+}
+
 .title-subtitle h1 {
     font-size: 40px;
 }

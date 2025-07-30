@@ -14,7 +14,7 @@ function outFunc() {
 }
 
 function emailAlert() {
-    alert("Thank you for your time! Please contact me at alexinfobusiness@gmail.com or find me on Linkedin.");
+    alert("Thank you for your time! Please contact me at alexdg.ux@gmail.com or find me on Linkedin.");
 }
 
 /* Zoom modal */
