@@ -235,8 +235,8 @@ header h2 {
 
 
 .sub-header {
-    background-color: #F2F8FF;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23bfdcfd' fill-opacity='0.2' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+    background-color: #030309;
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23bfdcfd' fill-opacity='0.2' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E"); */
     border-bottom: 2px dashed #bfdcfd;
     min-height: 100vh;
     min-height: 100vh;
@@ -267,10 +267,12 @@ header h2 {
 
 .sub-header p {
     font-size: 22px;
+    color: white;
 }
 
 .title-subtitle h1 {
     font-size: 40px;
+    color: white;
 }
 
 
@@ -314,6 +316,14 @@ header h2 {
 #ebook .hero-image{
     width: 80%;
     box-shadow: none;
+}
+
+#ebook .sub-header {
+    background-color: #F2F8FF;
+}
+
+#ebook .sub-header p{
+    color: #1A2C4C;
 }
 
 .rating-badge {
@@ -421,7 +431,7 @@ form.select-plans {
 
 .round-ctas {
     display: flex;
-    margin: 32px 0 12vh;
+    margin: 56px 0 15vh;
 }
 
 .round-ctas img {
@@ -494,23 +504,23 @@ form.select-plans {
 
 
 .top-partners img {
-    padding: 20px;
+    padding: 20px 20px 20px 0;
     max-width: 100% ;
 }
 
-.top-partners .msm {
-    padding-left: 0px;
+.top-partners .cottages {
+    padding-bottom: 16px;
 }
 
 
-.top-partners .booking, .top-partners .quidco  {
+.top-partners .booking  {
     padding-bottom: 15px;
 }
 
 .brands-work {
     font-size: 14px;
     margin: 0;
-    color: #47555f;
+    color: #acbbc6;
     font-family: 'Montserrat';
 }
 
@@ -612,11 +622,11 @@ form.select-plans {
 }
 
 .avatar img {
-    width: 30vw;
+    width: 32vw;
     min-width: 300px;
     height: auto;
     margin: 0;
-    margin-bottom: 32px;
+    margin-top: 10vh;
 }
 
 #ux-career-program .avatar img {
