@@ -66,6 +66,13 @@ header {
     /* position: absolute;  */
 }
 
+.caption {
+    font-style: italic;
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+}
+
 .navigation a {
     padding: 0 15px;
     font-weight: 700;
