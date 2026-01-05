@@ -1626,7 +1626,7 @@ img.build, img.deliver {
 }
 
 /* case-study PAGE MEDIA QUERIES */
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-width: 500px) {
     .case-study {padding: 35px 16px !important}
 
     .case-study iframe {
