@@ -840,7 +840,7 @@ img.build, img.deliver {
 .case-studies-cards img, .ux-challenges-cards img {cursor: pointer}
 
 .card .title {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     padding: 75px 2px 0;
 }
