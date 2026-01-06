@@ -1604,10 +1604,10 @@ img.build, img.deliver {
         left: 68%;
     }
 
-    .case-studies > div > div.case-studies-text > h1,
+    /* .case-studies > div > div.case-studies-text > h1,
     .ux-challenges > div.center-box > div.ux-challenges-text.ux-challenges-text > h1 {
         text-align: left;
-    }
+    } */
 
     .mobile-badge, .side-project-badge, .assets-badge {
         margin: 233px 10px;
@@ -1648,6 +1648,14 @@ img.build, img.deliver {
         padding-top: 16px !important;
     }
 
+    header h1 {
+        font-size: 18px !important;
+    }
+
+    header h2 {
+        font-size: 14px !important;
+    }
+
     h1 {
     font-size: 26px !important;
     }
@@ -1659,5 +1667,6 @@ img.build, img.deliver {
     p {
         font-size: 16px !important;
     }
+
 }    
 
