@@ -1505,7 +1505,7 @@ img.build, img.deliver {
     header {position:initial}
     /* .sub-header .flex-box, #ux-career-program .flex-box {padding: 16px 0 !important;} */
 
-    #ssc video {
+    #ssc video, #flex-canx video {
         width: 80%;
         height: 80%;
     }
