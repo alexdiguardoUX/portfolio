@@ -1665,11 +1665,15 @@ img.build, img.deliver {
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
     p {
         font-size: 14px !important;
+    }
+
+    .caption {
+        font-size: 12px !important;
     }
 
 }    
