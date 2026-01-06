@@ -917,7 +917,7 @@ img.build, img.deliver {
     border-radius: 20px;
     display: inline-block;
     max-width: 400px;
-    height: 500px;
+    height: 488px;
     margin: 25px 2%;
     transition: all 0.2s;
 }
@@ -1469,6 +1469,10 @@ img.build, img.deliver {
     .chat-bar-hide {
         display: none !important;
     }
+
+    .case-studies .card {
+        max-height: 450px;
+    }
 }
   
 
@@ -1626,7 +1630,7 @@ img.build, img.deliver {
 }
 
 /* case-study PAGE MEDIA QUERIES */
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .case-study {padding: 35px 16px !important}
 
     .case-study iframe {
