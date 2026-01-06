@@ -1664,8 +1664,12 @@ img.build, img.deliver {
         font-size: 20px !important;
     }
 
+    h3 {
+        font-size: 16px;
+    }
+
     p {
-        font-size: 16px !important;
+        font-size: 14px !important;
     }
 
 }    
