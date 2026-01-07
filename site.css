@@ -1236,7 +1236,7 @@ img.build, img.deliver {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media (max-width: 700px){
     .zoom-modal-content {
         width: 100%;
     }
@@ -1517,6 +1517,12 @@ img.build, img.deliver {
         display: none;
     }
 }
+
+@media (min-width: 1000px) {
+    .case-study section {
+        max-width: 1000px;
+    }
+}    
 
 @media (max-width: 800px) {
     .flex-box, #ux-career-program .flex-box, #ebook .flex-box {
