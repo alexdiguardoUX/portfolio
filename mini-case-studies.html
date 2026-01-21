@@ -159,58 +159,113 @@
 
     /* Controls */
     .controls{
-      position:absolute;
-      left:50%;
-      bottom:18px;
-      transform:translateX(-50%);
-      display:flex;
-      align-items:center;
-      gap:10px;
-      padding:10px 12px;
-      border:1px solid var(--outline);
-      border-radius:999px;
-      background:rgba(0,0,0,.28);
-      backdrop-filter:blur(10px);
-    }
-    .btn{
-      appearance:none;
-      border:1px solid var(--outline);
-      background:rgba(255,255,255,.06);
-      color:var(--text-light);
-      padding:10px 12px;
-      border-radius:999px;
-      cursor:pointer;
-      font-weight:600;
-      transition:transform .08s ease, background .15s ease;
-      font-family:var(--font-heading);
-    }
-    .btn:hover{ background:rgba(255,255,255,.10); }
-    .btn:active{ transform:scale(.98); }
+  position:absolute;
+  left:50%;
+  bottom:18px;
+  transform:translateX(-50%);
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 10px;
+  border-radius:999px;
 
-    .dots{
-      display:flex;
-      gap:8px;
-      padding:0 4px;
-      align-items:center;
-    }
-    .dot{
-      width:10px;
-      height:10px;
-      border-radius:50%;
-      border:1px solid var(--outline);
-      background:rgba(255,255,255,.12);
-      cursor:pointer;
-    }
-    .dot[aria-current="true"]{
-      background:rgba(255,255,255,.85);
-      border-color:rgba(255,255,255,.55);
-    }
+  /* solid, high-contrast “chip” behind controls */
+ background: rgb(255 255 255 / 32%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgb(255 255 255);
+  box-shadow:0 8px 24px rgba(0,0,0,.35);
+}
 
-    /* Focus */
-    .btn:focus-visible, .dot:focus-visible{
-      outline:2px solid rgba(56,189,248,.9);
-      outline-offset:2px;
-    }
+/* arrow buttons */
+.btn{
+  appearance:none;
+  border-radius:999px;
+  border:1px solid rgba(148,163,184,.8);
+  background:rgba(15,23,42,1);
+  color:#F9FAFB;
+  cursor:pointer;
+  font-family:var(--font-heading);
+  font-weight:600;
+
+  /* target size */
+  min-width:44px;
+  min-height:44px;
+  padding:0 14px;
+  font-size:18px;
+  line-height:1;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  transition:
+    background .15s ease,
+    border-color .15s ease,
+    transform .07s ease;
+}
+
+.btn:hover{
+  background:rgba(30,64,175,1);          /* higher contrast hover */
+  border-color:rgba(191,219,254,1);
+}
+
+.btn:active{
+  transform:scale(.97);
+}
+
+/* dots */
+.dots{
+  display:flex;
+  gap:8px;
+  padding:0 4px;
+  align-items:center;
+}
+
+/* base dot is still clickable & visible */
+.dot{
+  position:relative;
+  cursor:pointer;
+  border-radius:999px;
+
+  /* minimum hit area */
+  min-width:20px;
+  min-height:20px;
+  padding:0;
+
+  border:1px solid rgba(148,163,184,.8);
+  background:rgba(15,23,42,1);
+}
+
+/* use pseudo element so we can change shape/size for current */
+.dot::before{
+  content:"";
+  display:block;
+  width:8px;
+  height:8px;
+  margin:auto;
+  border-radius:999px;
+  background:rgba(148,163,184,1);
+}
+
+/* current slide: bigger pill + lighter bg so it’s not color-only */
+.dot[aria-current="true"]{
+  border-width:2px;
+  border-color:rgba(56,189,248,1);
+  background:rgba(30,64,175,1);
+}
+
+.dot[aria-current="true"]::before{
+  width:12px;
+  height:12px;
+}
+
+/* Focus: thick, obvious ring on dark bg */
+.btn:focus-visible,
+.dot:focus-visible{
+  outline:3px solid rgba(56,189,248,1);
+  outline-offset:3px;
+}
+
 
     /* Mobile: stack panels */
     @media (max-width: 980px){
@@ -276,7 +331,7 @@
           </div>
         </div>
 
-        <div class="panel panel-visual">
+        <div class="panel panel-visual" style="background: #292d31;">
         <div class="panel-content" style="max-width: 1100px;">
             <div class="visual-card">
               <!-- Use your actual file path/name -->
