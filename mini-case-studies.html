@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini Case Studies Carousel</title>
+
+  <!-- Fonts: Montserrat (headings) + Open Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --dark-bg:#0b1020;
+      --dark-accent-1:rgba(56,189,248,.12);
+      --dark-accent-2:rgba(168,85,247,.12);
+
+      --light-bg:#e9eaf3;
+
+      --text-light:#fff;
+      --text-dark:#0b1020;
+      --muted-light:rgba(255,255,255,.75);
+      --outline:rgba(255,255,255,.14);
+
+      --font-heading:'Montserrat', sans-serif;
+      --font-body:'Open Sans', sans-serif;
+
+      --shadow:0 14px 50px rgba(0,0,0,.45);
+      --radius:18px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; margin:0; }
+    body{
+      font-family:var(--font-body);
+      background:#050816;
+      overflow:hidden; /* each slide is full viewport */
+    }
+
+    /* Carousel shell */
+    .carousel{
+      height:100vh;
+      width:100vw;
+      position:relative;
+    }
+
+    /* Horizontal snap track */
+    .track{
+      height:100%;
+      width:100%;
+      display:flex;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      scroll-behavior:smooth;
+      -webkit-overflow-scrolling:touch;
+      scrollbar-width:none;
+    }
+    .track::-webkit-scrollbar{ display:none; }
+
+    /* Each slide is 100% viewport */
+    .slide{
+      flex:0 0 100%;
+      height:100%;
+      width:100%;
+      scroll-snap-align:start;
+      display:grid;
+      grid-template-columns:1fr 1fr; /* two containers */
+    }
+
+    /* Panels */
+    .panel{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 40px
+    }
+
+    .panel-text{
+      color:var(--text-light);
+      background:
+        radial-gradient(1000px 700px at 20% 20%, var(--dark-accent-1), transparent 55%),
+        radial-gradient(900px 600px at 80% 30%, var(--dark-accent-2), transparent 60%),
+        var(--dark-bg);
+    }
+
+    .panel-visual{
+      background:var(--light-bg);
+      color:var(--text-dark);
+    }
+
+    .panel-content{
+      width:100%;
+      max-width:680px;
+    }
+
+    /* Typography */
+    h1,h2,h3{
+      font-family:var(--font-heading);
+      letter-spacing:-0.02em;
+      margin:0;
+    }
+
+    .title{
+        font-size: clamp(32px, 3.6vw, 48px); /* smaller than before */
+        line-height: 1.1;
+        margin-bottom: 32px; /* more space below title */
+        font-weight: 700;
+    }
+
+    .section{
+      margin-top:40px;
+    }
+
+    .section h3{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 14px; /* more air */
+    }
+    .section p,
+    .section li{
+        font-size: 16px;
+        line-height: 1.65; /* more relaxed */
+        color: var(--muted-light);
+    }
+    .section ul{
+      margin:0;
+      padding-left:18px;
+      color:var(--muted-light);
+    }
+    .section li{ margin:6px 0; }
+
+    .section + .section{
+        margin-top: 48px;
+    }
+
+    /* Visual container */
+   .visual-card{
+        width:min(100%, 980px);
+        height:min(92vh, 920px);
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        overflow: visible;
+    }
+    .visual-card img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      display:block;
+    }
+
+    .visual-content{
+        max-width: none;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* Controls */
+    .controls{
+      position:absolute;
+      left:50%;
+      bottom:18px;
+      transform:translateX(-50%);
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border:1px solid var(--outline);
+      border-radius:999px;
+      background:rgba(0,0,0,.28);
+      backdrop-filter:blur(10px);
+    }
+    .btn{
+      appearance:none;
+      border:1px solid var(--outline);
+      background:rgba(255,255,255,.06);
+      color:var(--text-light);
+      padding:10px 12px;
+      border-radius:999px;
+      cursor:pointer;
+      font-weight:600;
+      transition:transform .08s ease, background .15s ease;
+      font-family:var(--font-heading);
+    }
+    .btn:hover{ background:rgba(255,255,255,.10); }
+    .btn:active{ transform:scale(.98); }
+
+    .dots{
+      display:flex;
+      gap:8px;
+      padding:0 4px;
+      align-items:center;
+    }
+    .dot{
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      border:1px solid var(--outline);
+      background:rgba(255,255,255,.12);
+      cursor:pointer;
+    }
+    .dot[aria-current="true"]{
+      background:rgba(255,255,255,.85);
+      border-color:rgba(255,255,255,.55);
+    }
+
+    /* Focus */
+    .btn:focus-visible, .dot:focus-visible{
+      outline:2px solid rgba(56,189,248,.9);
+      outline-offset:2px;
+    }
+
+    /* Mobile: stack panels */
+    @media (max-width: 980px){
+      body{ overflow:hidden; }
+      .slide{
+        grid-template-columns:1fr;
+        grid-template-rows:auto 1fr;
+      }
+      .panel{
+        padding:24px;
+      }
+      .visual-card{
+        height:min(62vh, 560px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="carousel" aria-label="Mini case studies carousel">
+    <div class="track" id="track">
+
+      <!-- Slide 1 -->
+      <article class="slide" id="slide-1" aria-label="Slide 1 of 2">
+        <div class="panel panel-text">
+          <div class="panel-content">
+            <h1 class="title">AI for personalised recommendations</h1>
+
+            <div class="section">
+              <h3>Why it mattered</h3>
+              <p>
+                Returning users often land on generic pages that do not reflect what they are actually trying to do.
+                I wanted to explore how AI could help create a more tailored experience.
+              </p>
+            </div>
+
+            <div class="section">
+              <h3>Key decisions</h3>
+              <ul>
+                <li>Predicted intent based on previous user activity</li>
+                <li>Identified user profiles (guitarists, drummers, producers etc.)</li>
+                <li>Used an LLM to generate a tailored welcome message</li>
+                <li>Used recommendation APIs to build product bundles</li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h3>Outcome</h3>
+              <p>
+                As an exploratory concept, success was assessed through user testing, where
+                <strong style="color:#fff;">70% of participants</strong> agreed that the recommendations matched their interests.
+                The other 30% felt indifferent or did not find it useful.
+              </p>
+            </div>
+
+            <div class="section">
+              <h3>Personal reflections</h3>
+              <p>
+                This exploration helped me understand how different AI services can work together to create personalised
+                experiences, while also supporting the goal of increasing revenue per visitor.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-visual">
+        <div class="panel-content" style="max-width: 1100px;">
+            <div class="visual-card">
+              <!-- Use your actual file path/name -->
+              <img src="images/ai-bundle.png" alt="AI for personalised recommendations visual" />
+            </div>
+          </div>
+        </div>
+      </article>
+
+    
+
+      <!-- Slide 2 -->
+      <article class="slide" id="slide-2" aria-label="Slide 2 of 2">
+        <div class="panel panel-text">
+          <div class="panel-content">
+            <h1 class="title">A way to help my son with bilingual pronunciations</h1>
+
+            <div class="section">
+              <h3>Why it mattered</h3>
+              <p>
+                My son Liam (8 months old at the time of writing) is growing up in a bilingual English–Italian family.
+                I wanted to support early language development by helping him associate objects, people and sounds with
+                pronunciation during the critical 6–18 months.
+              </p>
+            </div>
+
+            <div class="section">
+              <h3>Key decisions</h3>
+              <ul>
+                <li>Focused primarily on visual and audio association rather than text</li>
+                <li>Used big tappable areas to maximise usability</li>
+                <li>Used native pronunciation in both English and Italian</li>
+                <li>Included real-world sounds for animals and music instruments</li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h3>Outcome</h3>
+              <p>
+                Although it is still too early for Liam to pronounce words, after a week of use he consistently reacted
+                more to certain musical instruments and animal sounds, suggesting early recognition and preference.
+              </p>
+            </div>
+
+            <div class="section">
+              <h3>Personal reflections</h3>
+              <p>
+                Designing for children forced extreme simplicity. This is a parent supervised learning tool rather than
+                a passive entertainment app, reinforcing how clarity and focus can create calm, effective educational experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-visual">
+          <div class="panel-content" style="max-width: 1100px;">
+            <div class="visual-card">
+              <!-- Use your actual file path/name -->
+              <img src="images/learning-app.png" alt="Learning with Liam visual" />
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Controls -->
+    <div class="controls" aria-label="Carousel controls">
+      <button class="btn" id="prev" type="button" aria-label="Previous slide">‹</button>
+      <div class="dots" role="tablist" aria-label="Slide selector">
+        <button class="dot" type="button" data-index="0" aria-current="true" aria-label="Go to slide 1"></button>
+        <button class="dot" type="button" data-index="1" aria-current="false" aria-label="Go to slide 2"></button>
+        <!-- <button class="dot" type="button" data-index="2" aria-current="false" aria-label="Go to slide 3"></button> -->
+  
+      </div>
+      <button class="btn" id="next" type="button" aria-label="Next slide">›</button>
+    </div>
+  </section>
+
+  <script>
+    const track = document.getElementById('track');
+    const slides = Array.from(track.querySelectorAll('.slide'));
+    const dots = Array.from(document.querySelectorAll('.dot'));
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+
+    function goTo(index) {
+      const clamped = Math.max(0, Math.min(index, slides.length - 1));
+      slides[clamped].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+      updateDots(clamped);
+    }
+
+    function updateDots(activeIndex) {
+      dots.forEach((d, i) => d.setAttribute('aria-current', i === activeIndex ? 'true' : 'false'));
+    }
+
+    function currentIndex() {
+      const left = track.scrollLeft;
+      const width = track.clientWidth;
+      return Math.round(left / width);
+    }
+
+    prevBtn.addEventListener('click', () => goTo(currentIndex() - 1));
+    nextBtn.addEventListener('click', () => goTo(currentIndex() + 1));
+    dots.forEach(d => d.addEventListener('click', () => goTo(Number(d.dataset.index))));
+
+    // Sync dots when user scrolls (touchpad/swipe)
+    let raf = null;
+    track.addEventListener('scroll', () => {
+      if (raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => updateDots(currentIndex()));
+    });
+
+    // Keyboard support
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') goTo(currentIndex() - 1);
+      if (e.key === 'ArrowRight') goTo(currentIndex() + 1);
+    });
+  </script>
+</body>
+</html>
