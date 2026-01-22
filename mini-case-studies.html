@@ -410,9 +410,34 @@
         <button class="dot" type="button" data-index="0" aria-current="true" aria-label="Go to slide 1"></button>
         <button class="dot" type="button" data-index="1" aria-current="false" aria-label="Go to slide 2"></button>
         <!-- <button class="dot" type="button" data-index="2" aria-current="false" aria-label="Go to slide 3"></button> -->
-  
+       
       </div>
       <button class="btn" id="next" type="button" aria-label="Next slide">›</button>
+      <button
+          class="btn"
+          id="openNewTab"
+          type="button"
+          aria-label="Open in new tab"
+          title="Open full page"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <!-- external-link icon -->
+            <path d="M14 3h7v7" />
+            <path d="M10 14L21 3" />
+            <path d="M21 14v7h-7" />
+            <path d="M3 10v11h11" />
+          </svg>
+      </button>
     </div>
   </section>
 
@@ -454,6 +479,12 @@
     window.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowLeft') goTo(currentIndex() - 1);
       if (e.key === 'ArrowRight') goTo(currentIndex() + 1);
+    });
+
+    const openNewTabBtn = document.getElementById('openNewTab');
+
+    openNewTabBtn.addEventListener('click', () => {
+      window.open(window.location.href, '_blank', 'noopener');
     });
   </script>
 </body>
