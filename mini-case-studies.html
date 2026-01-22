@@ -482,10 +482,20 @@
     });
 
     const openNewTabBtn = document.getElementById('openNewTab');
-
     openNewTabBtn.addEventListener('click', () => {
-      window.open(window.location.href, '_blank', 'noopener');
+      const url = new URL(window.location.href);
+      url.searchParams.set('full', '1');
+      window.open(url.toString(), '_blank', 'noopener');
     });
+
+
+
+    const params = new URLSearchParams(window.location.search);
+    const isFullView = params.get('full') === '1';
+
+    if (isFullView && openNewTabBtn) {
+      openNewTabBtn.style.display = 'none';
+    }
   </script>
 </body>
 </html>
