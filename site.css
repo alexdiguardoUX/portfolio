@@ -65,6 +65,10 @@ body {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
 }
 
+#ebook body {
+     color: var(--white);
+}
+
 /* ========================================
    HEADER
    ======================================== */
@@ -344,6 +348,7 @@ header h2 {
 
 #ebook .case-study {
     padding: var(--space-lg) 0 var(--space-lg);
+    display: none;
 }
 
 #ebook .buy-now-btn {
@@ -360,7 +365,7 @@ header h2 {
 }
 
 #ebook .sub-header p {
-    color: var(--gray-900);
+    color: var(--white);
 }
 
 .rating-badge {
@@ -1598,6 +1603,11 @@ img.build, img.deliver {
         margin: var(--space-lg) 0;
         display: none;
     }
+
+   #ebook .sub-header h1 {
+    color: white !important;
+   }
+
     #ebook .hero-image {
         display: block;
         margin: 0 auto;
