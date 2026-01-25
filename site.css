@@ -111,7 +111,8 @@ header {
 }
 
 .navigation {
-    margin: var(--space-lg) 0 0 39vw;
+    /* margin: var(--space-lg) 0 0 39vw; */
+    margin: 20px 0 0 48vw;
 }
 
 .caption {
@@ -178,23 +179,13 @@ nav.floating-nav a.active {
 .hero-image {
     opacity: 0;
     transform: translateX(100%);
-    animation: slideInBounce 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    animation: slideInRight 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
 }
 
-@keyframes slideInBounce {
+@keyframes slideInRight {
     0% {
         opacity: 0;
         transform: translateX(100%);
-    }
-    60% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    75% {
-        transform: translateX(10px);
-    }
-    90% {
-        transform: translateX(0);
     }
     100% {
         opacity: 1;
@@ -205,23 +196,13 @@ nav.floating-nav a.active {
 .introduction {
     opacity: 0;
     transform: translateX(-100%);
-    animation: slideInBounceLeft 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    animation: slideInLeft 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-@keyframes slideInBounceLeft {
+@keyframes slideInLeft {
     0% {
         opacity: 0;
         transform: translateX(-100%);
-    }
-    60% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    75% {
-        transform: translateX(-12px);
-    }
-    90% {
-        transform: translateX(0);
     }
     100% {
         opacity: 1;
@@ -231,9 +212,17 @@ nav.floating-nav a.active {
 
 .top-partners {
     opacity: 0;
-    transform: translateX(100%);
-    animation: slideInBounceLeft 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
 }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* ========================================
    TYPOGRAPHY
@@ -301,9 +290,9 @@ header h2 {
     max-width: 95%;
 }
 
-.sub-header .flex-box {
+/* .sub-header .flex-box {
     padding: var(--space-xl) 0 0;
-}
+} */
 
 .sub-header h1 span {
     color: var(--blue-primary);
@@ -464,17 +453,12 @@ form.select-plans {
 
 .round-ctas {
     display: flex;
-    margin: var(--space-xl) 0 15vh;
+    gap: var(--space-md);
 }
 
 .round-ctas img {
     width: 47.43px;
-    margin: 0 var(--space-xs);
     cursor: pointer;
-}
-
-.linkedin-round {
-    margin-left: var(--space-md) !important;
 }
 
 .gmail-round-wrap {
@@ -710,7 +694,7 @@ form.select-plans {
 }
 
 .testimonial-container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     text-align: center;
 }
@@ -721,6 +705,9 @@ form.select-plans {
     justify-content: center;
     gap: var(--space-lg);
     padding: var(--space-lg);
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: var(--space-md);
 }
 
 .testimonial-card {
@@ -728,7 +715,7 @@ form.select-plans {
     padding: var(--space-md);
     border-radius: var(--radius-md);
     margin: var(--space-xs);
-    max-width: 400px;
+    max-width: 715px;
     transition: transform 0.3s ease-in-out;
     text-align: left;
     display: flex;
@@ -1539,7 +1526,8 @@ img.build, img.deliver {
 
 @media (max-width: 1310px) {
     .navigation {
-        margin: var(--space-lg) 0 0 0;
+        /* margin: var(--space-lg) 0 0 0; */
+        margin: 20px 0 0 0; 
     }
     .icon-scroll {
         bottom: 20vh;
