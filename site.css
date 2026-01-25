@@ -1342,7 +1342,7 @@ img.build, img.deliver {
    ======================================== */
 
 .help-panel {
-    background: var(--white);
+    background: var(--blue-bg);
     padding: var(--space-xs) var(--space-md) var(--space-lg) var(--space-md);
     text-align: center;
     border-bottom: 2px dashed var(--blue-light);
