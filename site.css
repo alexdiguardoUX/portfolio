@@ -1574,8 +1574,8 @@ img.build, img.deliver {
 @media (max-width: 800px) {
     .flex-box, #ux-career-program .flex-box, #ebook .flex-box {
         display: block;
-        margin: 0 var(--space-sm) 0 var(--space-sm);
-        padding: 0 !important;
+        /* margin: 0 var(--space-md) 0 var(--space-md) !important */
+   
     }
     .case-study {
         padding: 35px var(--space-sm) !important;
@@ -1612,10 +1612,10 @@ img.build, img.deliver {
     .round-ctas {
         margin: 55px 0 var(--space-xl);
     }
-    .top-partners {
+    /* .top-partners {
         text-align: center;
         padding: var(--space-xs);
-    }
+    } */
     .top-partners img {
         max-width: 80%;
     }
