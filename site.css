@@ -849,7 +849,11 @@ form.select-plans {
 .about-me-content p {
     font-size: 20px;
     color: var(--gray-700);
-    line-height: var(--leading-relaxed);
+    line-height: 1.5;
+}
+
+.about-me-content a {
+    color: var(--blue-primary) !important;
 }
 
 .about-me-video {
