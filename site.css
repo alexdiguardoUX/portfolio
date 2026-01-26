@@ -116,7 +116,7 @@ header {
 
 .navigation {
     /* margin: var(--space-lg) 0 0 39vw; */
-    margin: 20px 0 0 48vw;
+    margin: 20px 0 0 40vw;
 }
 
 .caption {
@@ -807,6 +807,82 @@ form.select-plans {
     font-size: 14px;
     color: var(--gray-700);
     margin-top: 0;
+}
+
+/* ========================================
+   ABOUT ME SECTION
+   ======================================== */
+
+.about-me {
+    background-color: var(--blue-bg);
+    border-bottom: 2px dashed var(--blue-light);
+    padding: var(--space-4xl) 8vw;
+}
+
+.about-me-container {
+   display: flex;
+    gap: 14vw;
+    align-items: flex-start;
+    margin: 40px auto;
+    margin: var(--space-lg);
+    max-width: 91%;
+    margin: 40px auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+.about-me-content {
+    flex: 1;
+    max-width: 624px;
+}
+
+.about-me-content h2 {
+    font-size: var(--text-2xl);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: var(--space-sm);
+}
+
+.about-me-content p {
+    font-size: 20px;
+    color: var(--gray-700);
+    line-height: var(--leading-relaxed);
+}
+
+.about-me-video {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.about-me-video iframe {
+    border-radius: var(--radius-lg);
+}
+
+/* Responsive - Stack on mobile */
+@media (max-width: 1000px) {
+    .about-me-container {
+        flex-direction: column;
+        gap: var(--space-xl);
+    }
+    
+    .about-me-content {
+        max-width: 100%;
+    }
+    
+    .about-me-video {
+        /* max-width: 100%;
+        height: 250px; */
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 /* ========================================
