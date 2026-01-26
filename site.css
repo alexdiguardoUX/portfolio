@@ -1406,7 +1406,7 @@ img.build, img.deliver {
 .chat-bar {
     position: absolute;
     bottom: var(--space-xs);
-    width: 90% !important;
+    width: 83% !important;
 }
 
 .dropdown {
@@ -1515,7 +1515,7 @@ img.build, img.deliver {
 
 @media (max-width: 390px) {
     .dialog-box {
-        height: 85vh;
+        height: auto;
         max-width: 300px;
         right: inherit;
     }
