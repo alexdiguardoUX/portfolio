@@ -821,7 +821,7 @@ form.select-plans {
 
 .about-me-container {
    display: flex;
-    gap: 14vw;
+    gap: 16vw;
     align-items: flex-start;
     margin: 40px auto;
     margin: var(--space-lg);
