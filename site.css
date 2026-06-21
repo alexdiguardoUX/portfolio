@@ -309,6 +309,7 @@ header h2 {
 .sub-header p {
     font-size: 22px;
     color: var(--white);
+    margin-bottom: 40px;
 }
 
 .title-subtitle h1 {
@@ -1658,7 +1659,7 @@ img.build, img.deliver {
 @media (max-width: 800px) {
     .flex-box, #ux-career-program .flex-box {
         display: block;
-        /* margin: 0 var(--space-md) 0 var(--space-md) !important */
+        margin: 0 6vw !important
    
     }
 
